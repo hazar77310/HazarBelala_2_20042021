@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body
+{
+	font-family: "Raleway";
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+#logo {
+	display: flex;
+	align-items: center;
+	display: inline-flex;
+	margin-left: 50px;
+}
+
+
+.flex-container {
+ 	display: flex;
+	justify-content:flex-end;
+	padding: 10px; 
+	align-content: space-around;
+	margin-left: 50px;
+	align-items: right;
+	text-align: right;
+	display: inline-flex;
+	margin-left: 1400px;
+}
+
+
+.flex-item {
+	display: flex;
+	justify-content:flex-end;
+	padding: 10px; 
+	align-content: space-around;
+	align-items: right;
+	text-align: right;
+	display: inline-flex;
+}
+
+.recherche {
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+
+.mapmarker i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  font-size: 1.2em;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  height: 40px;
+  width: 50px;
+  margin-left: 0px;
+  position: center;
+  display: inline-flex;
+}
+
+.searchfield {
+	height: 40px;
+	margin-left: 0px;
+}
+
+.searchbutton {
+	height: 40px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: #0065FC;
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.category-head {
+	margin-left: 50px;
+
+}
+
+.icontextfilters {
+	margin-left: 50px;
+	border: 2px solid;
+	border-color: #e0e0e0;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+
+.filtres {
+	float: left;
+	margin-left: 50px;
+
+}
+
+.info {
+	float: left;
+	font-size: 0.8em;
+	background-color: #FFFFFF;
+	padding: 5px;
+	border: 1px solid;
+	border-radius: 50%;
+	border-color: #000000;
+	width: 20px;
+  	color: #0065FC;
+  	align-items: center;
+  	margin-left: -65px;
+  	margin-top: 15px;
+}
+
+.hebergements {
+	border: 1px solid;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-color: #F2F2F2;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	width: 910px;
+	height: 600px;
+	padding: 20px;
+	line-height: 0px;
+}
+
+.boxhebergement {
+	border: 1px solid;
+	border-radius: 20px;
+	background-color: #ffffff;
+	border-color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	width: 230px;
+	height: 250px;
+	padding: 5px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+h2 {
+	margin-left: 0px;
+	float: left;
+}
+
+h3 {
+	margin-left: 50px;
+	font-size: 30px;
+	border-radius: 20px;
+}
+
+h4 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 0px;
+}
+
+.container {
+	color: #000000;
+	font-size: 20px;
+	background-color: #F2F2F2;
+	margin-left: 50px;
+	padding: 10px;
+	width: 900px;
+	border-radius: 20px;
+
+}
+
+
+
+.iconeconomique {
+	display: flex;
+	padding: 15px;
+	padding-bottom: -10px;
+	margin-left: -15px;
+	border: 1px solid;
+	border-radius: 50%;
+	border-color: #DEEBFF;
+	width: 10px;
+  	display: inline-flex;
+  	color: #0065FC;
+  	background-color:#DEEBFF;
+  	align-items: center;
+}
+
+.iconchild {
+	display: flex;
+	padding: 15px;
+	margin-left: -25px;
+	border: 1px solid;
+	border-radius: 50%;
+	border-color: #DEEBFF;
+	width: 10px;
+	position: left;
+  	display: inline-flex;
+  	color: #0065FC;
+  	background-color:#DEEBFF;
+  	align-items: center;
+}
+
+.iconheart {
+	display: flex;
+	padding: 15px;
+	margin-left: -15px;
+	border: 1px solid;
+	border-radius: 50%;
+	border-color: #DEEBFF;
+	width: 10px;
+	position: left;
+  	display: inline-flex;
+  	color: #0065FC;
+  	background-color:#DEEBFF;
+  	align-items: center;
+}
+
+.iconanimal {
+	display: flex;
+	padding: 15px;
+	margin-left: -10px;
+	border: 1px solid;
+	border-radius: 50%;
+	border-color: #DEEBFF;
+	width: 10px;
+	position: left;
+  	display: inline-flex;
+  	color: #0065FC;
+  	background-color:#DEEBFF;
+  	align-items: center;
+}
+
+i {
+	align-content: space-around;
+	justify-content:space-around;
+	display: flex;
+	display: inline-flex;
+	text-align: center;
+	position: center; 
+	align-items: center;
+}
+
+img {
+	align-content: space-around;
+	justify-content:space-around;
+	border-radius: 20px;
+}
+
+p {
+	color: #000000;
+}
+
+.etoilebleu {
+	color: #0065FC;
+}
+
+.etoilegrise {
+	color: #e0e0e0;
+}
