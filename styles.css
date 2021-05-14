@@ -119,13 +119,13 @@ body
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 	border-color: #F2F2F2;
+	margin-bottom: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-	width: 910px;
+	width: 810px;
 	height: 600px;
-	padding: 20px;
-	line-height: 0px;
+	padding: 0px;
 }
 
 .boxhebergement {
@@ -133,6 +133,7 @@ body
 	border-radius: 20px;
 	background-color: #ffffff;
 	border-color: #ffffff;
+	margin-right: 12px;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
@@ -143,15 +144,44 @@ body
 	cursor: pointer;
 }
 
+
 h2 {
 	margin-left: 0px;
-	float: left;
 }
 
 h3 {
 	margin-left: 50px;
 	font-size: 30px;
 	border-radius: 20px;
+	border-color: #f2f2f2;
+	width: 800px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.charticon {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 200px;
+}
+
+.boxpopulaire {
+	border: 1px solid;
+	border-radius: 20px;
+	background-color: #ffffff;
+	border-color: #ffffff;
+	margin-right: 12px;
+	display: flex;
+	width: 600px;
+	height: 200px;
+	padding: 5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	flex-wrap: nowrap;
+	margin-left: 20px;
+
+
 }
 
 h4 {
@@ -159,6 +189,12 @@ h4 {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 0px;
+}
+
+h5 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 .container {
@@ -169,10 +205,11 @@ h4 {
 	padding: 10px;
 	width: 900px;
 	border-radius: 20px;
-
 }
 
-
+a {
+	color: #000000;
+}
 
 .iconeconomique {
 	display: flex;
@@ -260,4 +297,67 @@ p {
 
 .etoilegrise {
 	color: #e0e0e0;
+}
+
+
+.lespluspopulaires {
+	border: 1px solid;
+	border-color: #F2F2F2;
+	display: flex;
+	background-color: #F2F2F2;
+	flex-direction: column;
+	border-radius: 20px;
+	width: 700px;
+	height: 850px;
+	padding: 5px;
+	flex-wrap: nowrap;
+	margin-left: 50px;
+}
+
+
+.texte {
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    line-height: 0px;
+    width: 300px;
+    flex-wrap: nowrap;
+    border: 1px solid;
+    border-color: #ffffff;
+	position: absolute; 
+	display: inline-flex;
+}
+
+
+h3 {
+	margin-left: 50px;
+	font-size: 30px;
+	border-radius: 20px;
+	border-color: #f2f2f2;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+h5{
+	font-size: 30px;
+	border-radius: 20px;
+	border-color: #ffffff;
+	width: 500px;
+	display: flex;
+	font-size: 18px;
+	flex-wrap: wrap;
+
+
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+
+
+
+
+@media screen and (max-width: 600px){
+	.searchbutton {background-color: green;}
 }
