@@ -336,7 +336,6 @@ h3 {
 	border-color: #f2f2f2;
 	display: flex;
 	justify-content: space-between;
-
 }
 
 h5{
@@ -347,15 +346,113 @@ h5{
 	display: flex;
 	font-size: 18px;
 	flex-wrap: wrap;
-
-
 }
 
 main {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.activitesection {
+	display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.activites {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 1700px;
+    height: 600px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+}
+
+.activite1 {
+    width: 350px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-size: contain;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.activite4 {
+    width: 350px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-size: contain;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.activite2 {
+	flex-basis: 60%;
+	width: 350px;
+    padding: 5px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.activite3 {
+	flex-basis: 40%;
+	width: 350px;
+    padding: 5px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
 
 
+.activite5 {
+	flex-basis: 45%;
+	width: 350px;
+    padding: 5px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.activite6 {
+	flex-basis: 45%;
+	width: 350px;
+    padding: 5px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+
+.activitemarseille {
+	width: 100%;
+}
+
+footer {
+	border: 1px solid;
+	background-color: #f2f2f2;
+	border-color: #f2f2f2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 2050px;
+	height: 250px;
+	padding: 5px;
+	cursor: pointer;
+}
 
 
 @media screen and (max-width: 600px){
