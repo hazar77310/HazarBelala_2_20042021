@@ -1,11 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-body
-{
+body {
 	font-family: "Raleway";
 	font-weight: normal;
 	font-style: normal;
+	text-decoration: none;
 }
 
 
@@ -16,29 +16,50 @@ body
 	margin-left: 50px;
 }
 
-
 .flex-container {
  	display: flex;
-	justify-content:flex-end;
+	justify-content: flex-end;
 	padding: 10px; 
-	align-content: space-around;
 	margin-left: 50px;
-	align-items: right;
 	text-align: right;
 	display: inline-flex;
-	margin-left: 1400px;
+	cursor: pointer;
 }
 
-
-.flex-item {
+.menuheb {
 	display: flex;
-	justify-content:flex-end;
-	padding: 10px; 
-	align-content: space-around;
-	align-items: right;
-	text-align: right;
+	padding: 0px; 
+	display: inline-flex;
+	cursor: pointer;
+	color: #0065FC;
+	justify-content: space-between;
+	margin-right: 10px;
+}
+
+
+.menuactiv {
+	display: flex;
+	padding: 0px; 
+	display: inline-flex;
+	cursor: pointer;
+	justify-content: space-between;
+}
+.sinscrire {
+	display: flex;
+	justify-content: space-around;
+	float: right;
+	padding-left: 10px;
+	color: #0065fc;
+	font-weight: bolder;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
 	display: inline-flex;
 }
+
+
 
 .recherche {
 	margin-left: 50px;
@@ -47,7 +68,6 @@ body
 
 .mapmarker i {
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
   font-size: 1.2em;
@@ -56,8 +76,13 @@ body
   height: 40px;
   width: 50px;
   margin-left: 0px;
-  position: center;
+  position: relative;
   display: inline-flex;
+}
+
+.search {
+	display: flex;
+	display: inline-flex;
 }
 
 .searchfield {
@@ -77,53 +102,71 @@ body
 
 .category-head {
 	margin-left: 50px;
+	display: flex;
+	display: inline-flex;
 
 }
 
 .icontextfilters {
-	margin-left: 50px;
 	border: 2px solid;
 	border-color: #e0e0e0;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	padding-right: 10px;
+	border-radius: 20px;
 	font-weight: bold;
+	cursor: pointer;
+	width: 200px;
+	height: 20px;
+	padding-bottom: 20px;
+	padding-bottom: 10px;
+	display: flex;
+	display: inline-flex;
+	margin-right: 10px;
+
 }
 
+.filterdescription:hover {
+	color: #0065fc;
+	font-weight: bold;
+	background-color: #DEEBFF;
+}
 
 .filtres {
-	float: left;
 	margin-left: 50px;
+	display: flex;
+	display: inline-flex;
 
 }
 
+
 .info {
-	float: left;
-	font-size: 0.8em;
-	background-color: #FFFFFF;
-	padding: 5px;
-	border: 1px solid;
-	border-radius: 50%;
-	border-color: #000000;
-	width: 20px;
-  	color: #0065FC;
   	align-items: center;
-  	margin-left: -65px;
   	margin-top: 15px;
+  	display: flex;
+  	display: inline-flex;
+  	margin-left: 50px;
+  	justify-content: space-between;
+}
+
+.iconinfo {
+	border: 1px solid;
+	border-color: #000000;
+	border-radius: 50%;
+	display: flex;
+	width: 15px;
+	padding: 10px;
+	text-align: center;
+	color: #0065FC;
 }
 
 .hebergements {
 	border: 1px solid;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
-	border-color: #F2F2F2;
-	margin-bottom: 20px;
+	border-color: #F2F2F2;;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-	width: 810px;
+	width: 900px;
+	margin-bottom: 20px;
 	height: 600px;
 	padding: 0px;
 }
@@ -137,16 +180,18 @@ body
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-	width: 230px;
-	height: 250px;
+	width: 250px;
+	height: 280px;
 	padding: 5px;
 	margin-left: 15px;
 	cursor: pointer;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
 }
 
 
 h2 {
 	margin-left: 0px;
+	text-decoration: none;
 }
 
 h3 {
@@ -157,13 +202,12 @@ h3 {
 	width: 800px;
 	display: flex;
 	justify-content: space-between;
+	text-decoration: none;
+
 }
 
 .charticon {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-right: 200px;
 }
 
 .boxpopulaire {
@@ -173,13 +217,14 @@ h3 {
 	border-color: #ffffff;
 	margin-right: 12px;
 	display: flex;
-	width: 600px;
-	height: 200px;
+	width: 570px;
+	height: 150px;
 	padding: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	cursor: pointer;
 	flex-wrap: nowrap;
 	margin-left: 20px;
+	box-shadow: 0 0 6px 3px #b1b1b14b;
 
 
 }
@@ -189,12 +234,20 @@ h4 {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 0px;
+	text-decoration: none;
 }
 
 h5 {
 	color: #000000;
 	font-weight: bold;
 	font-size: 20px;
+	text-decoration: none;
+	border-radius: 20px;
+	border-color: #ffffff;
+	width: 500px;
+	display: flex;
+	font-size: 18px;
+	flex-wrap: wrap;
 }
 
 .container {
@@ -214,12 +267,12 @@ a {
 .iconeconomique {
 	display: flex;
 	padding: 15px;
-	padding-bottom: -10px;
-	margin-left: -15px;
+	padding-bottom: 15px;
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
-	width: 10px;
+	width: 15px;
+	position: relative;
   	display: inline-flex;
   	color: #0065FC;
   	background-color:#DEEBFF;
@@ -229,12 +282,12 @@ a {
 .iconchild {
 	display: flex;
 	padding: 15px;
-	margin-left: -25px;
+	padding-bottom: 15px
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
-	width: 10px;
-	position: left;
+	width: 20px;
+	position: relative;
   	display: inline-flex;
   	color: #0065FC;
   	background-color:#DEEBFF;
@@ -244,12 +297,12 @@ a {
 .iconheart {
 	display: flex;
 	padding: 15px;
-	margin-left: -15px;
+	padding-bottom: 15px;
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
-	width: 10px;
-	position: left;
+	width: 20px;
+	position: relative;
   	display: inline-flex;
   	color: #0065FC;
   	background-color:#DEEBFF;
@@ -259,11 +312,11 @@ a {
 .iconanimal {
 	display: flex;
 	padding: 15px;
-	margin-left: -10px;
+	padding-bottom: 15px;
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
-	width: 10px;
+	width: 20px;
 	position: left;
   	display: inline-flex;
   	color: #0065FC;
@@ -277,7 +330,7 @@ i {
 	display: flex;
 	display: inline-flex;
 	text-align: center;
-	position: center; 
+	position: relative; 
 	align-items: center;
 }
 
@@ -299,6 +352,11 @@ p {
 	color: #e0e0e0;
 }
 
+.etoiles {
+	display: flex;
+	display: inline-flex;
+}
+
 
 .lespluspopulaires {
 	border: 1px solid;
@@ -314,6 +372,13 @@ p {
 	margin-left: 50px;
 }
 
+.h3pop {
+	display: flex;
+	width: 600px;
+	height: 20px;
+
+}
+
 
 .texte {
 	display: flex;
@@ -321,31 +386,10 @@ p {
     flex-direction: column;
     line-height: 0px;
     width: 300px;
-    flex-wrap: nowrap;
     border: 1px solid;
     border-color: #ffffff;
 	position: absolute; 
 	display: inline-flex;
-}
-
-
-h3 {
-	margin-left: 50px;
-	font-size: 30px;
-	border-radius: 20px;
-	border-color: #f2f2f2;
-	display: flex;
-	justify-content: space-between;
-}
-
-h5{
-	font-size: 30px;
-	border-radius: 20px;
-	border-color: #ffffff;
-	width: 500px;
-	display: flex;
-	font-size: 18px;
-	flex-wrap: wrap;
 }
 
 main {
@@ -353,7 +397,7 @@ main {
 	flex-wrap: wrap;
 }
 
-.activitesection {
+#activitesection {
 	display: flex;
     align-items: stretch;
     justify-content: stretch;
@@ -383,6 +427,7 @@ main {
     background-size: contain;
     border-radius: 20px;
     background-color: #ffffff;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
 }
 
 .activite4 {
@@ -394,6 +439,7 @@ main {
     background-size: contain;
     border-radius: 20px;
     background-color: #ffffff;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
 }
 
 .activite2 {
@@ -401,9 +447,10 @@ main {
 	width: 350px;
     padding: 5px;
     height: 220px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #ffffff;
     margin-bottom: 50px;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
 }
 
 .activite3 {
@@ -413,6 +460,7 @@ main {
     height: 220px;
     border-radius: 20px;
     background-color: #ffffff;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
 }
 
 
@@ -421,9 +469,10 @@ main {
 	width: 350px;
     padding: 5px;
     height: 220px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #ffffff;
     margin-bottom: 50px;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
 }
 
 .activite6 {
@@ -431,10 +480,10 @@ main {
 	width: 350px;
     padding: 5px;
     height: 220px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #ffffff;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
 }
-
 
 
 .activitemarseille {
@@ -448,13 +497,210 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 2050px;
-	height: 250px;
+	width: 1880px;
+	height: 150px;
 	padding: 5px;
 	cursor: pointer;
 }
 
+  .apropos,
+  .noshebergements,
+  .assistance {
+  	padding: 0px;
+  	margin-bottom: 0px;
+  }
 
-@media screen and (max-width: 600px){
-	.searchbutton {background-color: green;}
+@media screen and (max-width: 1200px){
+	.container {
+		margin-bottom: 50px;
+	}
+	footer {
+		justify-content: flex-start;
+		width: 1000px;
+		height: 300px;
+	}
+	.imgheb,
+	.imagepopulaire,
+	.imgactiv,
+	.imgactivbig {
+		width: 250px; 
+	}
+	.activites {
+    width: 1000px;
+    height: 600px;
+    }
+    .activite1,
+    .activite2,
+    .activite3,
+    .activite4,
+    .activite5,
+    .activite6 {
+    width: 250px;
+    }
+    .container {
+	margin-left: 25px;
+  }
+  .lespluspopulaires {
+	margin-left: 25px;
+  }
+  #activitesection {
+    margin-left: 25px;
+	}
+}
+@media screen and (max-width: 1090px){
+	.container {
+		margin-bottom: 50px;
+	}
+	footer {
+		justify-content: flex-start;
+		width: 1000px;
+		height: 300px;
+	}
+	.imgheb,
+	.imagepopulaire,
+	.imgactiv,
+	.imgactivbig {
+		width: 250px; 
+	}
+	.activites {
+    width: 1000px;
+    height: 600px;
+    }
+    .activite1,
+    .activite2,
+    .activite3,
+    .activite4,
+    .activite5,
+    .activite6 {
+    width: 250px;
+    }
+    .container {
+	margin-left: 25px;
+  }
+  .lespluspopulaires {
+	margin-left: 25px;
+  }
+  #activitesection {
+    margin-left: 25px;
+	}
+}
+@media screen and (max-width: 500px){
+  .searchbutton {background-color: green;}
+
+  .flex-container {
+    width: 50vw;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  .category-head {
+    width: 30vw;
+    position: relative;
+    flex-direction: column;
+  }
+  .icontextfilters {
+    margin-bottom: 15px;
+  }
+  .container {
+	width: 430px;
+	border-radius: 20px;
+	flex-direction: column;
+	margin-left: 10px;
+	margin-bottom: 20px;
+  }
+  .hebergements {
+	width: 350px;
+	height: 1400px;
+  }
+  .lespluspopulaires {
+	flex-direction: column;
+	border-radius: 20px;
+	width: 435px;
+	height: 600px;
+	margin-left: 10px;
+  }
+
+  .boxpopulaire {
+	width: 410px;
+	height: 120px;
+	flex-direction: column;
+	margin-left: 5px;
+  }
+  .boxhebergement {
+	width: 380px;
+	height: 200px;
+	line-height: 0px;
+	margin-left: 5px;
+  }
+  .texte {
+    flex-direction: column;
+    width: 142px;
+    height: 150px,
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  #activitesection {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .activites {
+    flex-direction: column;
+    width: 400px;
+    height: 2050px;
+    background-color: #F2F2F2;
+    padding: 10px;
+  }
+  footer {
+    flex-direction: column;
+    width: 405px;
+    height: 600px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  ul li {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+  .charticon {
+  	justify-content: flex-start;
+  	font-size: 4.5vmax;
+  }
+  .h3pop {
+	width: 350px;
+	height: 20px;
+  }
+  h2 {
+  	font-size: 4vmax;
+  }
+  h3 {
+  	font-size: 4vmax;
+  }
+  h1 {
+  	font-size: 4vmax;
+  }
+  p {
+  	font-size: 3vw;
+  }
+  h4 {
+  	font-size: 3vw;
+  }
+  .etoiles {
+  	font-size: 3vw;
+  }
+  h5 {
+  	font-size: 3vw;
+  	line-height: 0px;
+  }
+  .imgheb {
+	width: 380px;
+	height: 130px;
+  }
+  .imagepopulaire {
+	width: 200px;
+	height: 130px;
+  }
+
+
+
+
 }

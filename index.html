@@ -10,154 +10,161 @@
 	<body>
 		<header>
 			<a href="index.html" id="logo"><img src="C:/Users/azert/Documents/secondProjet/images/logo/Reservia.svg" alt="logo" class="logo"></a>
-			<nav class="flex-container">
-				<div class="flex-item">Hébergement</div>
-				<div class="flex-item">Activités</div>
-				<div class="flex-item">S'inscrire</div> 
-			</nav>
+			<div class="flex-container">
+				<nav>
+					<ul>
+						<li class="menuheb"><a href="#hebergements">Hébergements</a></li>
+                    	<li class="menuactiv"><a href="#activitesection">Activités</a></li>
+                	</ul>  
+            	</nav>
+            
+            <p><a href="#" class="sinscrire">S'inscrire</a></p> 
+            </div>
 		</header>
 
 		<section class="recherche"><!-- Section 1 -->
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     		<p> En plein centre ville ou en pleine nature</p>
 
- 			<span class="search">
-        		<span class="mapmarker"><i class="fas fa-map-marker-alt"></i></span>
+ 			<div class="search">
+        		<div class="mapmarker"><i class="fas fa-map-marker-alt"></i></div>
         		<input class="searchfield" type="search" placeholder="Marseille, France"/>
         		<input class="searchbutton" type="submit" value="Rechercher">
-    		</span>
+    		</div>
     	</section>
 
 
-		<section class="filters"><!-- Section 2  -->
+		<div class="filters">
 			<h2 class="filtres">Filtres</h2>
 			<div class="category-head">
-				<span class="icontextfilters">
-					<span class="iconeconomique">
+				<div class="icontextfilters">
+					<div class="iconeconomique">
 						<i class="fas fa-money-bill-wave" aria-hidden="true"></i>
-					</span>
-					<span class="filterdescription">Economique</span>
-				</span>
+					</div>
+					<div class="filterdescription">Economique</div>
+				</div>
 
-				<span class="icontextfilters">
-					<span class="iconchild">
+				<div class="icontextfilters">
+					<div class="iconchild">
 						<i class="fas fa-child" aria-hidden="true"></i>
-					</span>
-					<span class="filterdescription">Familial</span>
-				</span>
+					</div>
+					<div class="filterdescription">Familial</div>
+				</div>
 
-				<span class="icontextfilters">
-					<span class="iconheart">
+				<div class="icontextfilters">
+					<div class="iconheart">
 						<i class="fas fa-heart" aria-hidden="true"></i>
-					</span>
-					<span class="filterdescription">Romantique</span>
-				</span>
+					</div>
+					<div class="filterdescription">Romantique</div>
+				</div>
 
-				<span class="icontextfilters">
-					<span class="iconanimal">
+				<div class="icontextfilters">
+					<div class="iconanimal">
 						<i class="fas fa-dog" aria-hidden="true"></i>
-					</span>
-					<span class="filterdescription">Animaux Autorisés</span>
-				</span>
+					</div>
+					<div class="filterdescription">Animaux Autorisés</div>
+				</div>
 			</div>
+		</div>
 
-			<span class="info"><i class="fas fa-info" aria-hidden="true"></i></span>
+		<div class="info">
+			<span class="iconinfo"><i class="fas fa-info" aria-hidden="true"></i></span>
 			<p>Plus de 500 logements sont disponibles dans cette ville.</p>
+		</div>
+		
 
-		</section>
-
-	<!-- Section 3 -->
+	<!-- Section 2 -->
 
 		<main>
 			<div class="container">
-				<h3 class="hebergementmarseille">Hébergements à Marseille</h3>
-				<section class="hebergements">
+				<h3 id="hebergements">Hébergements à Marseille</h3>
+				<section class="hebergements"> 
 					<div class="boxhebergement">
 						<a href="index.html" id="aubergelacannebiere">
-							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aubergelacannebiere" class="aubergelacannebiere" width="230" height="130"/>
+							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aubergelacannebiere" class="imgheb" width="250" height="130"/>
 							<h4>Auberge la Cannebière</h4>
 							<p>Nuit à partir de <strong>25€</strong>
 							<div class="etoiles">
-                                <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>	
-                                <span class="etoilegrise"><i class="fas fa-star"></i></span>
+                                <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>	
+                                <div class="etoilegrise"><i class="fas fa-star"></i></div>
                             </div> 
 						</a>
 					</div>
 
  					<div class="boxhebergement">
  						<a href="index.html" id="hotelduport">
- 							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotelduport" class="hotelduport" width="230" height="130"/>
+ 							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotelduport" class="imgheb" width="250" height="130"/>
  							<h4>Hôtel du port</h4>
  							<p>Nuit à partir de <strong>52€</strong></p>
  							<div class="etoiles">
-                                <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>	
-                                <span class="etoilebleu"><i class="fas fa-star"></i></span>	
+                                <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>	
+                                <div class="etoilebleu"><i class="fas fa-star"></i></div>	
                             </div> 
  						</a>
  					</div>
 
  					<div class="boxhebergement">
  						<a href="index.html" id="hotellesmouettes">
- 							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotellesmouettes" class="hotellesmouettes" width="230" height="130"/>
+ 							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotellesmouettes" class="imgheb" width="250" height="130"/>
  							<h4>Hôtel Les Mouettes</h4>
  							<p>Nuit à partir de <strong>76€</strong></p>
  							<div class="etoiles">
-                                <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>	
-                                <span class="etoilegrise"><i class="fas fa-star"></i></span>
+                                <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>	
+                                <div class="etoilegrise"><i class="fas fa-star"></i></div>
                             </div> 
  						</a>
  					</div>
 
  					<div class="boxhebergement">
  						<a href="index.html" id="aubergedelamer">
- 							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="aubergedelamer" class="aubergedelamer" width="230" height="130"/>
+ 							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="aubergedelamer" class="imgheb" width="250" height="130"/>
  							<h4>Auberge de la Mer</h4>
  							<p>Nuit à partir de <strong>46€</strong></p>
  							<div class="etoiles">
-                                <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilegrise"><i class="fas fa-star"></i></span>	
-                                <span class="etoilegrise"><i class="fas fa-star"></i></span>
+                                <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilegrise"><i class="fas fa-star"></i></div>	
+                                <div class="etoilegrise"><i class="fas fa-star"></i></div>
                             </div> 
  						</a>
  					</div>
 
  					<div class="boxhebergement">
  						<a href="index.html" id="aubergelepanier">
- 							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="aubergelepanier" class="aubergelepanier" width="230" height="130"/>
+ 							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="aubergelepanier" class="imgheb" width="250" height="130"/>
  							<h4>Auberge le Panier</h4>
  							<p>Nuit à partir de <strong>23€</strong></p>
  							<div class="etoiles">
-                            	<span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>	
-                                <span class="etoilegrise"><i class="fas fa-star"></i></span>
+                            	<div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>	
+                                <div class="etoilegrise"><i class="fas fa-star"></i></div>
                             </div> 
  						</a>
  					</div>
 
  					<div class="boxhebergement">
  						<a href="index.html" id="hotelchezamina">
- 							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotelchezamina" class="hotelchezamina" width="230" height="130"/>
+ 							<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotelchezamina" class="imgheb" width="250" height="130"/>
  							<h4>Hôtel chez Amina</h4>
  							<p>Nuit à partir de <strong>96€</strong></p>
  							<div class="etoiles">
-                                <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                        <span class="etoilebleu"><i class="fas fa-star"></i></span>	
-                                <span class="etoilebleu"><i class="fas fa-star"></i></span>	
+                                <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                        <div class="etoilebleu"><i class="fas fa-star"></i></div>	
+                                <div class="etoilebleu"><i class="fas fa-star"></i></div>	
                             </div> 
  						</a>
  					</div>
@@ -166,24 +173,24 @@
  			</div>
 
 			<aside class="lespluspopulaires">
-				<h3>Les plus populaires
-					<span class="charticon">
+				<h3 class="h3pop">Les plus populaires
+					<div class="charticon">
                     	<i class="fas fa-chart-line"></i>
-                	</span>
+                	</div>
                 </h3><br>
 					<div class="populaires">
 						<div class="boxpopulaire">
 							<a href="index.html" id="hotellesoleildumatin">
-								<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotellesoleildumatin" class="hotellesoleildumatin" width="300" height="200"/>
+								<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotellesoleildumatin" class="imagepopulaire" width="250" height="150"/>
 								<div class="texte">
 									<h5>Hôtel Le soleil du matin</h5>
 									<p>Nuit à partir de <strong>128€</strong>
-									<div class="etoilespopulaire">
-                                		<span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                            	<span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                            	<span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                            	<span class="etoilebleu"><i class="fas fa-star"></i></span>	
-                                		<span class="etoilegrise"><i class="fas fa-star"></i></span>
+									<div class="etoiles">
+                                		<div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                            	<div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                            	<div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                            	<div class="etoilebleu"><i class="fas fa-star"></i></div>	
+                                		<div class="etoilebleu"><i class="fas fa-star"></i></div>	
                             		</div> 
                             	</div>
 							</a>
@@ -191,16 +198,16 @@
 
  						<div class="boxpopulaire">
  							<a href="index.html" id="aucoeurdeleau">
- 								<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="aucoeurdeleau" class="aucoeurdeleau" width="300" height="200"/>
+ 								<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="aucoeurdeleau" class="imagepopulaire" width="250" height="150"/>
  								<div class="texte">
  									<h5>Au coeur de l'eau Chambres d'hôtes</h5>
  									<p>Nuit à partir de <strong>71€</strong>
- 									<div class="etoilespopulaire">
-                                		<span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                            	<span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                            	<span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                            	<span class="etoilebleu"><i class="fas fa-star"></i></span>	
-                                		<span class="etoilegrise"><i class="fas fa-star"></i></span>
+ 									<div class="etoiles">
+                                		<div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                            	<div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                            	<div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                            	<div class="etoilebleu"><i class="fas fa-star"></i></div>	
+                                		<div class="etoilegrise"><i class="fas fa-star"></i></div>
                             		</div>
                             	</div> 
  							</a>
@@ -208,16 +215,16 @@
 
  						<div class="boxpopulaire">
  							<a href="index.html" id="hoteltoutbleuetblanc">
- 								<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hoteltoutbleuetblanc" class="hoteltoutbleuetblanc" width="300" height="200"/>
+ 								<img src="C:/Users/azert/Documents/secondProjet/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hoteltoutbleuetblanc" class="imagepopulaire" width="250" height="150"/>
  								<div class="texte">
  									<h5>Hôtel Tout bleu et Blanc</h5>
  									<p>Nuit à partir de <strong>68€</strong></p>
- 									<div class="etoilespopulaire">
-                                		<span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                            	<span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                            	<span class="etoilebleu"><i class="fas fa-star"></i></span>
-		                           		<span class="etoilebleu"><i class="fas fa-star"></i></span>	
-                                		<span class="etoilegrise"><i class="fas fa-star"></i></span>
+ 									<div class="etoiles">
+                                		<div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                            	<div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                            	<div class="etoilebleu"><i class="fas fa-star"></i></div>
+		                           		<div class="etoilebleu"><i class="fas fa-star"></i></div>	
+                                		<div class="etoilegrise"><i class="fas fa-star"></i></div>
                             		</div> 
                             	</div>
  							</a>
@@ -226,14 +233,14 @@
 			</aside>
 		</main>
 
-<!-- Section 4  -->
+<!-- Section 3  -->
 
-		<section class="activitesection">
-			<h3 class="activitemarseille">Activités à Marseille</h3>
+		<section id="activitesection">
+			<h3>Activités à Marseille</h3>
 			<div class="activites">
 				<div class="activite1">
 					<a href="index.html" id="vieuxport">
-						<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieuxport" class="vieuxport" width="350" height="450"/>
+						<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieuxport" class="imgactivbig" width="350" height="450"/>
 						<h4>Vieux Port</h4>
 					</a>
 				</div>
@@ -241,13 +248,13 @@
  				<div class="activite2et3">
  					<div class="activite2">
  						<a href="index.html" id="portdepomegues">
- 							<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="portdepomegues" class="portdepomegues" width="350" height="170"/>
+ 							<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="portdepomegues" class="imgactiv" width="350" height="170"/>
  							<h4>Port de Pomègues</h4>
  						</a>
  					</div>
  					<div class="activite3">
  						<a href="index.html" id="ilesdufrioul">
- 							<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="ilesdufrioul" class="ilesdufrioul" width="350" height="170"/>
+ 							<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="ilesdufrioul" class="imgactiv" width="350" height="170"/>
  							<h4>Iles du Frioul</h4>
  						</a>
  					</div>
@@ -255,7 +262,7 @@
 
  				<div class="activite4">
  					<a href="index.html" id="parcnational">
- 						<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parcnational" class="parcnational" width="350" height="450"/>
+ 						<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parcnational" class="imgactivbig" width="350" height="450"/>
  						<h4>Parc National des Calanques</h4>
  					</a>
  				</div>
@@ -263,13 +270,13 @@
 				<div class="activite5et6">
 					<div class="activite5">
 						<a href="index.html" id="notredame">
-							<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notredame" class="notredame" width="350" height="170"/>
+							<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notredame" class="imgactiv" width="350" height="170"/>
 							<h4>Notre-Dame-de-la-Garde</h4>
 						</a>
 					</div>
 					<div class="activite6">
 						<a href="index.html" id="parclongchamp">
-							<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parclongchamp" class="parclongchamp" width="350" height="170"/>
+							<img src="C:/Users/azert/Documents/secondProjet/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parclongchamp" class="imgactivv" width="350" height="170"/>
 							<h4>Parc Longchamp</h4>
 						</a>
 					</div>
@@ -302,8 +309,6 @@
  						<li>Nous contacter</li>
  					</ul>
  			</div>
- 		
-
 		</footer>
 	</body>
 </html>
