@@ -3,11 +3,11 @@
 
 body {
 	font-family: "Raleway";
+	word-wrap: break-word;
 }
 
 
 .logo {
-	display: flex;
 	align-items: center;
 	display: inline-flex;
 	margin-left: 50px;
@@ -16,12 +16,10 @@ body {
 }
 
 .flex-container {
- 	display: flex;
 	padding: 10px; 
 	margin-left: 50px;
 	margin-right: 60px;
 	display: -webkit-box;
-    display: -ms-flexbox;
 
 }
 
@@ -31,7 +29,6 @@ a {
 }
 
 .menuheb {
-	display: flex;
 	padding: 0px; 
 	color: #0065FC;
 	list-style: none;
@@ -43,7 +40,6 @@ a {
 
 
 .menuactiv {
-	display: flex;
 	padding: 0px; 
 	list-style: none;
     display: inline-flex;
@@ -54,7 +50,6 @@ a {
 }
 
 .sinscrire {
-	display: flex;
 	float: right;
 	padding-left: 50px;
 	color: #0065fc;
@@ -80,7 +75,6 @@ header {
 }
 
 .mapmarker i {
-  display: flex;
   align-items: center;
   background-color: #f2f2f2;
   font-size: 1.2em;
@@ -94,7 +88,6 @@ header {
 }
 
 .search {
-	display: flex;
 	display: inline-flex;
 	margin-top: 20px;
 }
@@ -130,8 +123,8 @@ header {
 .icontextfilters {
 	font-weight: bold;
 	cursor: pointer;
-	display: block;
 	display: inline-block;
+	justify-content: center;
 	border: 3px solid;
 	margin-right: 25px;
 	border-radius: 30px;
@@ -149,7 +142,6 @@ header {
 }
 
 .filterdescription {
-	display: block;
 	display: inline-block;
 	border: 1px solid;
 	width: 220px;
@@ -175,7 +167,6 @@ header {
 .info {
   	margin-top: 15px;
   	width: 100%;
-  	display: flex;
   	display: inline-flex;
   	margin-left: 50px;
 }
@@ -187,7 +178,6 @@ header {
 .iconinfo {
 	border: 2px solid;
 	border-radius: 50%;
-	display: flex;
 	width: 20px;
 	height: 30px;
 	align-items: center;
@@ -209,6 +199,14 @@ header {
 	padding: 0px;
 }
 
+.hebergements p {
+	padding-left: 15px;
+}
+.hebergements h4 {
+	font-size: 1.2em;
+	padding-left: 15px;
+}
+
 .boxhebergement {
 	border: 1px solid;
 	border-radius: 20px;
@@ -218,8 +216,8 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-	width: 16.5vw;
-	height: 13.6vw;
+	width: 16.6vw;
+	height: 15.7vw;
 	padding: 5px;
 	line-height: 0px;
 	margin-left: 15px;
@@ -242,7 +240,7 @@ h2 {
 
 h3 {
 	margin-left: 50px;
-	font-size: 30px;
+	font-size: 1.7em;
 	border-radius: 20px;
 	border-color: #f2f2f2;
 	width: 800px;
@@ -264,13 +262,23 @@ h3 {
 	margin-right: 12px;
 	display: flex;
 	width: 92%;
-	height: 170px;
+	height: 26.5%;
 	padding: 5px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	cursor: pointer;
 	flex-wrap: wrap;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 
+
+}
+
+.boxpopulaire h5 {
+	font-size: 1.4em;
+
+}
+
+.boxpopulaire p {
+	font-size: 1.2em;
 
 }
 
@@ -286,6 +294,10 @@ h4 {
 	font-size: 20px;
 	line-height: 0px;
 	font-weight: bold;
+}
+
+.etoilesheb {
+	padding-left: 15px;
 }
 
 h5 {
@@ -308,13 +320,12 @@ h5 {
 	margin-left: 50px;
 	padding: 20px;
 	width: 59%;
-	height: 750px;
+	height: 60%;
 	border-radius: 20px;
 }
 
 
 .iconeconomique {
-	display: flex;
 	padding: 15px;
 	padding-bottom: 15px;
 	border: 1px solid;
@@ -330,7 +341,6 @@ h5 {
 }
 
 .iconchild {
-	display: flex;
 	padding: 15px;
 	padding-bottom: 15px
 	border: 1px solid;
@@ -346,7 +356,6 @@ h5 {
 }
 
 .iconheart {
-	display: flex;
 	padding: 15px;
 	padding-bottom: 15px;
 	border: 1px solid;
@@ -362,7 +371,6 @@ h5 {
 }
 
 .iconanimal {
-	display: flex;
 	padding: 15px;
 	padding-bottom: 15px;
 	border: 1px solid;
@@ -380,7 +388,6 @@ h5 {
 i {
 	align-content: space-around;
 	justify-content:space-around;
-	display: flex;
 	display: inline-flex;
 	text-align: center;
 	position: relative; 
@@ -390,17 +397,12 @@ i {
 .imgheb {
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
-	width: 100%;
-	height: 170px;
-	margin: auto;
 	object-fit: cover;
 }
 
 .imagepopulaire {
 	border-bottom-left-radius: 20px;
 	border-top-left-radius: 20px;
-	width: 33%;
-	height: 170px;
 	margin: auto;
 	object-fit: cover;
 }
@@ -430,8 +432,8 @@ p {
 	color: #e0e0e0;
 }
 
-.etoiles {
-	display: flex;
+.etoiles,
+.etoilesheb {
 	display: inline-flex;
 }
 
@@ -452,8 +454,9 @@ p {
 
 .h3pop {
 	display: flex;
-	width: 450px;
+	width: 85%;
 	height: 20px;
+	font-size: 2em;
 
 }
 
@@ -464,11 +467,11 @@ p {
 
 
 .texte {
-	display: flex;
     justify-content: space-between;
     flex-direction: column;
-    flex-wrap: wrap;
     line-height: 0px;
+    padding-left: 15px;
+    word-wrap: break-word;
     width: 11%;
     border: 1px solid;
     border-color: transparent;
@@ -491,6 +494,10 @@ main {
     margin-top: 70px;
 }
 
+#activitesection h3 {
+font-size: 2.1em;
+}
+
 .activites {
 	display: flex;
     flex-direction: column;
@@ -502,6 +509,20 @@ main {
     margin-bottom: 50px;
     background-color: #ffffff;
     width: 95%;
+}
+
+.activites h4 {
+	font-size: 1.4em;
+	padding-left: 15px;
+}
+
+footer h5 {
+	font-size: 1.5em;
+}
+
+footer ul li {
+	font-size: 1.3em;
+	padding-bottom: 15px;
 }
 
 .activite1 {
@@ -579,7 +600,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
-	height: 150px;
+	height: 50%;
 	padding: 5px;
 	cursor: pointer;
 }
