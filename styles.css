@@ -3,7 +3,8 @@
 
 body {
 	font-family: "Raleway";
-	word-wrap: break-word;
+	overflow-x: hidden;
+
 }
 
 
@@ -36,11 +37,11 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-    border-top: 1px solid;
-    border-top-color: #0065FC;
 }
 
-.flex-container:hover {
+.menuheb:hover {
+    border-top: 1px solid;
+    border-top-color: #0065FC;
 }
 
 
@@ -51,6 +52,12 @@ a {
     padding-left: 50px;
     align-items: center;
     font-size: 1.5em;
+    padding-top: 20px; 
+}
+
+.menuactiv:hover {
+    border-top: 1px solid;
+    border-top-color: #0065FC;
 }
 
 .sinscrire {
@@ -177,7 +184,7 @@ header {
 }
 
 .info p {
-  	font-size: 1.5em;
+  	font-size: 1.3em;
   	display: flex;
 }
 .iconinfo {
@@ -198,17 +205,16 @@ header {
 
 .hebergements {
 	display: flex;
-	flex-wrap: wrap;
 	align-content: space-between;
 	margin-bottom: 20px;
-	padding-left: 15px;
+	flex-wrap: wrap;
 }
 
 .hebergements p {
 	padding-left: 15px;
 }
 .hebergements h4 {
-	font-size: 1.2em;
+	font-size: 1em;
 	padding-left: 15px;
 }
 
@@ -217,12 +223,10 @@ header {
 	border-radius: 20px;
 	background-color: #ffffff;
 	border-color: #ffffff;
-	margin-right: 25px;
+	margin-right: 50px;
 	display: block;
-	flex-wrap: wrap;
-	align-content: space-between;
-	width: 15vw;
-	height: 15.7vw;
+	width: 14vw;
+	height: 13.7vw;
 	line-height: 0px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	margin-bottom: 40px;
@@ -246,7 +250,7 @@ h3 {
 	border-radius: 20px;
 	border-color: #f2f2f2;
 	width: 800px;
-	display: flex;
+	display: block;
 	justify-content: space-between;
 	font-weight: bold;
 
@@ -263,24 +267,23 @@ h3 {
 	border-color: #ffffff;
 	margin-right: 12px;
 	display: inline-block;
-	width: 92%;
-	height: 26.5%;
+	width: 100%;
+	height: 25%;
 	padding: 5px;
 	margin-bottom: 30px;
 	cursor: pointer;
-	flex-wrap: wrap;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 
 
 }
 
 .boxpopulaire h5 {
-	font-size: 1.4em;
+	font-size: 1.2em;
 
 }
 
 .boxpopulaire p {
-	font-size: 1.2em;
+	font-size: 1.1em;
 
 }
 
@@ -298,9 +301,6 @@ h4 {
 	font-weight: bold;
 }
 
-.etoilesheb {
-	padding-left: 15px;
-}
 
 h5 {
 	color: #000000;
@@ -309,9 +309,7 @@ h5 {
 	border-radius: 20px;
 	border-color: #ffffff;
 	width: 500px;
-	display: flex;
 	font-size: 18px;
-	flex-wrap: wrap;
 	font-weight: bold;
 }
 
@@ -320,10 +318,11 @@ h5 {
 	font-size: 20px;
 	background-color: #F2F2F2;
 	margin-left: 50px;
-	padding: 20px;
-	width: 52%;
-	height: 60%;
+	padding-left: 50px;
+	width: 53%;
+	height: 885px;
 	border-radius: 20px;
+	margin-left: 50px;
 }
 
 
@@ -406,7 +405,7 @@ img {
 	border-top-left-radius: 20px;
 	object-fit: cover;
 	width: 100%;
-    height: 59%;
+    height: 55%;
 }
 
 .imagepopulaire {
@@ -416,6 +415,7 @@ img {
 	width: 40%;
     height: 100%;
     float: left;
+    margin-right: 5px;
 }
 
 .imgactivbig,
@@ -477,6 +477,9 @@ p {
 	display: inline-flex;
 }
 
+.etoilesheb {
+	padding-left: 15px;
+}
 
 .lespluspopulaires {
 	border: 1px solid;
@@ -485,45 +488,35 @@ p {
 	background-color: #F2F2F2;
 	flex-direction: column;
 	border-radius: 20px;
-	width: 28%;
-	height: 940px;
-	padding-left: 30px;
-	flex-wrap: nowrap;
-	margin-left: 50px;
+	width: 25%;
+	height: 880px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 100px;
+	position: relative;
 }
 
 .h3pop {
 	display: flex;
-	width: 85%;
+	width: 90%;
 	height: 20px;
 	font-size: 2em;
 	font-weight: bold;
-	padding-top: 15px;
+	padding-top: 10px;
+	margin-bottom: 50px;
 
 }
 
 .afficherplus {
 	font-weight: bolder;
 	margin-left: 20px;
+	font-size: 1.1em;
 }
 
 
-.texte {
-    justify-content: space-between;
-    flex-direction: column;
-    line-height: 0px;
-    padding-left: 15px;
-    word-wrap: break-word;
-    width: 11%;
-    border: 1px solid;
-    border-color: transparent;
-	position: absolute; 
-	display: inline-flex;
-}
 
 main {
 	display: flex;
-	flex-wrap: wrap;
 	width: 100%;
 }
 
@@ -537,7 +530,7 @@ main {
 }
 
 #activitesection h3 {
-font-size: 2.1em;
+	font-size: 2.1em;
 }
 
 .activites {
@@ -639,12 +632,12 @@ footer {
 	background-color: #f2f2f2;
 	border-color: #f2f2f2;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
 	height: 50%;
 	padding: 5px;
 	cursor: pointer;
+	margin-left: 50px;
 }
 
   .apropos,
@@ -653,5 +646,60 @@ footer {
   	padding: 0px;
   	margin-bottom: 0px;
   }
+@media screen and (max-width: 1467px){
+	.boxhebergement {
+		margin-right: 20px;
+		margin-bottom: 20px;
+		width: 16vw;
+	}
+	.container {
+		margin-left: 50px;
+	}
+	.hebergements p {
+		font-size: 0.8em;
+	}
+	.hebergements h4 {
+		font-size: 0.9em;
+	}
 
-@media screen and (max-width: 1880px){
+}
+
+@media screen and (max-width: 1432px){
+	.container {
+		width: 60%;
+		height: 700px;
+	}
+	.lespluspopulaires {
+		margin-left: 50px;
+	}
+	.etoilebleu,
+	.etoilegrise {
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 1281px){
+	.boxhebergement {
+		height: 15.7vw;
+	}
+	.container {
+		width: 53%;
+		height: 800px;
+	}
+	.boxhebergement {
+		width: 22vw;
+	}
+	.lespluspopulaires {
+		margin-left: 30px;
+		width: 29%;
+	}
+
+}
+
+@media screen and (max-width: 1000px){
+	.boxhebergement {
+		height: 400px;
+		padding-bottom: 5px;
+	}
+}
