@@ -522,7 +522,7 @@ p {
 	background-color: #F2F2F2;
 	flex-direction: column;
 	border-radius: 20px;
-	width: 30%;
+	width: 26%;
 	height: auto;
 	padding-left: 20px;
 	padding-right: 30px;
@@ -760,6 +760,10 @@ footer {
 	.hebergements p,
 	.hebergements h4 {
 		padding-bottom: 0px;
+	}
+	.lespluspopulaires {
+		margin-right: 50px;
+		padding-right: 20px;
 	}
 }
 
