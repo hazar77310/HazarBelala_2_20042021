@@ -154,7 +154,7 @@ header {
 	margin-right: 25px;
 	border-radius: 60px;
 	border-color: #F2F2F2;
-	width: 350px;
+	width: 320px;
 	height: 30px;
 	padding-bottom: 25px;
 	margin-bottom: 15px;
@@ -172,7 +172,7 @@ header {
 	display: inline-block;
 	border: 1px solid;
 	border-color: transparent;
-	width: 240px;
+	width: 210px;
 	height: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -189,6 +189,7 @@ header {
 
 .filters {
 	display: flex;
+	width: 100%;
 }
 
 .info {
@@ -249,9 +250,9 @@ header {
 	border-radius: 20px;
 	background-color: #ffffff;
 	border-color: #ffffff;
-	margin-right: 30px;
+	margin-right: 15px;
 	display: block;
-	width: 16.5vw;
+	width: 16vw;
 	padding: 5px;
 	height: 16vw;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
@@ -347,8 +348,10 @@ h5 {
 	font-size: 20px;
 	background-color: #F2F2F2;
 	margin-left: 50px;
-	padding-left: 50px;
-	width: 67%;
+	padding-left: 20px;
+	padding-right: 20px;
+	justify-content: space-between;
+	width: 70%;
 	height: auto;
 	border-radius: 20px;
 	display: block;
@@ -519,11 +522,12 @@ p {
 	background-color: #F2F2F2;
 	flex-direction: column;
 	border-radius: 20px;
-	width: 26%;
+	width: 30%;
 	height: auto;
-	padding-left: 30px;
-	padding-right: 40px;
+	padding-left: 20px;
+	padding-right: 30px;
 	margin-left: 50px;
+	margin-right: 50px;
 	position: relative;
 }
 
@@ -562,10 +566,9 @@ main {
 .activites {
 	display: flex;
     flex-direction: column;
-    align-items: stretch;
     flex-wrap: wrap;
-    flex-direction: column;
     margin-left: 50px;
+    margin-right: 50px;
     height: 600px;
     margin-bottom: 50px;
     background-color: #ffffff;
@@ -696,6 +699,7 @@ footer {
 @media screen and (max-width: 1600px){
 	.boxhebergement {
 		width: 16vw;
+		margin-right: 10px;
 		height: 17vw;
 		padding-bottom: 10px;
 	}
@@ -716,10 +720,6 @@ footer {
 }
 
 @media screen and (max-width: 1500px){
-	.boxhebergement {
-		margin-right: 15px;
-		width: 18vw;
-	}
 	.container {
 		padding-left: 20px;
 	}
@@ -737,6 +737,10 @@ footer {
 	h3 {
 		font-size: 1.5em;
 	}
+	.boxhebergement {
+		height: 19vw;
+		margin-right: 15px;
+	}
 
 }
 
@@ -752,7 +756,10 @@ footer {
 	}
 	.boxhebergement {
 		height: 19vw;
-		width: 18vw;
+	}
+	.hebergements p,
+	.hebergements h4 {
+		padding-bottom: 0px;
 	}
 }
 
@@ -939,7 +946,7 @@ footer {
 	.boxhebergement {
 		height: 20vw;
 		width: 22vw;
-		margin-right: 20px;
+		margin-right: 30px;
 	}
 	.imgactivbig {
 		height: 400px;
@@ -1007,18 +1014,19 @@ footer {
     	flex-direction: column-reverse;
   	}
   	.lespluspopulaires {
-    	width: 87%;
+    	width: 90%;
    	    margin-bottom: 30px;
    	    padding-left: 40px;
-  	}
+    }
+
     .charticon {
     	font-size: 3vw;
     }
   
   	.boxpopulaire {
-    	width: 25vw;
+    	width: 26vw;
     	height: 25vw;
-    	margin-right: 5px;
+    	margin-right: 15px;
     	padding: 0px;
   	}
   	.boxpopulaire h5 {
@@ -1037,7 +1045,7 @@ footer {
 		font-size: 0.8em;
 	}
     .container {
-    	width: 92.5%;
+    	width: 100%;
    	    padding-left: 7px;
    	    margin-left: 15px;
    	    padding-left: 25px;
@@ -1081,6 +1089,7 @@ footer {
 		width: 100%;
 		height: 800px;
 		margin-left: 5px;
+		flex-direction: column;
 	}
 	.activite1,
 	.activite2,
@@ -1124,8 +1133,7 @@ footer {
     	margin-left: 12px;
     }
     #activitesection,
-    .container,
-     {
+    .container {
 		padding-left: 12px;
 	}
 
@@ -1230,6 +1238,9 @@ footer {
 	.container {
 		width: 95%;
 	}
+	.lespluspopulaires {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 700px){
@@ -1261,6 +1272,9 @@ footer {
   	.sinscrire {
   		margin-left: 40vw;
   	}
+  	body {
+  		width: 100%;
+  	}
   	nav ul {
     	width: 100%;
     	padding-left: 0;
@@ -1285,7 +1299,7 @@ footer {
 		width: 150px;
 	}
 	.boxpopulaire {
-    	width: 87%;
+    	width: 100%;
     	height: 22vw;
   	}
   	.searchfa {
@@ -1318,9 +1332,7 @@ footer {
 	.imgheb {
 		height: 150px;
 	}
-	.lespluspopulaires {
-    	width: 85%;
-  	}
+	
 }	
 
 @media screen and (max-width: 600px){
@@ -1392,10 +1404,6 @@ footer {
 	.charticon {
 		font-size: 1.7em;
 	}
-	.lespluspopulaires {
-		width: 78%;
-		padding-left: 20px;
-	}
 	.container {
 		width: 89%;
 		margin-left: 12px;
@@ -1410,7 +1418,6 @@ footer {
     	width: 230px;
     }
     .lespluspopulaires {
-		width: 86%;
 		padding-left: 20px;
 		margin-left: 0px;
 	}
@@ -1522,6 +1529,7 @@ footer {
 	.container,
 	#activitesection {
 		margin-left: 0px;
+		margin-right: 0px;
 	}
 	.boxpopulaire,
 	.boxhebergement {
@@ -1530,9 +1538,6 @@ footer {
 	.hebergements p,
 	.populaires p {
 		padding-bottom: 0px;
-	}
-	.lespluspopulaires {
-		width: 83%;
 	}
 	.imgheb,
 	.imagepopulaire {
@@ -1571,3 +1576,4 @@ footer {
 	.poptitle {
 		width: 100%;
 	}
+}
