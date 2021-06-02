@@ -3,6 +3,7 @@
 body {
 	font-family: "Raleway";
 	overflow-x: hidden;
+	max-width: 100%;
 
 }
 
@@ -111,23 +112,33 @@ header {
 }
 
 .searchfield {
-	height: 60px;
-	margin-left: 0px;
+	height: 53px;
 	font-weight: bold;
 	font-size: 1.5em;
 	color: #000000;
 	padding-left: 15px;
-	width: 350px;
+	width: 305px;
+	border-color: transparent;
+}
+.research {
+	border: 2px solid;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	height: 56px;
+	width: 500px;
+	border-color: #f2f2f2;
+	border-right-color: transparent;
 }
 
 .searchbutton {
-	height: 60px;
+	height: 58px;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	background-color: #0065FC;
 	color: #FFFFFF;
 	font-size: 1.5em;
 	width: 190px;
+	margin: 0;
 
 }
 
@@ -137,10 +148,10 @@ header {
 	border-color: transparent;
 
 }
-
 .category-head {
 	margin-left: 50px;
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
 
 
 }
@@ -197,7 +208,7 @@ header {
   	width: 100%;
   	display: inline-flex;
   	margin-left: 50px;
-  	margin-bottom: 20px;
+  	margin-bottom: 30px;
 }
 
 .info p {
@@ -224,7 +235,7 @@ header {
 
 .hebergements {
 	display: flex;
-	align-content: space-between;
+	justify-content: space-between;
 	margin-bottom: 10px;
 	flex-wrap: wrap;
 }
@@ -236,13 +247,13 @@ header {
 
 .hebergements p {
 	padding-left: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 5px;
 	font-size: 0.9em;
 }
 .boxhebergement h4 {
 	font-size: 1.1em;
 	padding-left: 10px;
-	padding-bottom: 10px;
+	padding-bottom: px;
 }
 
 .boxhebergement {
@@ -250,13 +261,12 @@ header {
 	border-radius: 20px;
 	background-color: #ffffff;
 	border-color: #ffffff;
-	margin-right: 15px;
-	display: block;
-	width: 16vw;
+	display: flex;
+	width: 16.5vw;
 	padding: 5px;
-	height: 16vw;
+	height: 13vw;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
-	margin-bottom: 40px;
+	margin: 10px 0 25px 0;
 }
 
 
@@ -270,6 +280,7 @@ h2 {
 	font-size: 1.3em;
 }
 
+
 h3 {
 	font-size: 1.7em;
 	border-radius: 20px;
@@ -277,7 +288,7 @@ h3 {
 	width: 800px;
 	display: block;
 	justify-content: space-between;
-	font-weight: bold;
+	font-weight: bolder;
 
 }
 
@@ -289,6 +300,7 @@ h3 {
 
 .poptitle {
 	display: flex;
+	font-weight: bolder;
 }
 
 .boxpopulaire {
@@ -296,10 +308,9 @@ h3 {
 	border-radius: 20px;
 	background-color: #ffffff;
 	border-color: #ffffff;
-	margin-right: 12px;
 	display: inline-block;
 	width: 100%;
-	height: 27%;
+	height: 9.5vw;
 	padding: 5px;
 	margin-bottom: 30px;
 	cursor: pointer;
@@ -312,6 +323,7 @@ h3 {
 	font-size: 1.3em;
 	margin: 0;
 	padding-top: 10px;
+	font-weight: bold;
 
 
 }
@@ -337,7 +349,7 @@ h4 {
 
 h5 {
 	color: #000000;
-	font-weight: bold;
+	font-weight: bolder;
 	border-radius: 20px;
 	border-color: #ffffff;
 	font-size: 1.3em;
@@ -348,10 +360,10 @@ h5 {
 	font-size: 20px;
 	background-color: #F2F2F2;
 	margin-left: 50px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
 	justify-content: space-between;
-	width: 70%;
+	width: 67%;
 	height: auto;
 	border-radius: 20px;
 	display: block;
@@ -372,6 +384,8 @@ h5 {
   	color: #0065FC;
   	background-color:#DEEBFF;
   	align-items: center;
+  	box-shadow: 0 0 6px 3px #DEEBFF;
+
 }
 
 .iconchild {
@@ -387,6 +401,7 @@ h5 {
   	color: #0065FC;
   	background-color:#DEEBFF;
   	align-items: center;
+  	box-shadow: 0 0 6px 3px #DEEBFF;
 }
 
 .iconheart {
@@ -402,6 +417,7 @@ h5 {
   	color: #0065FC;
   	background-color:#DEEBFF;
   	align-items: center;
+  	box-shadow: 0 0 6px 3px #DEEBFF;
 }
 
 .iconanimal {
@@ -417,6 +433,7 @@ h5 {
   	color: #0065FC;
   	background-color:#DEEBFF;
   	align-items: center;
+  	box-shadow: 0 0 6px 3px #DEEBFF;
 }
 
 i {
@@ -524,8 +541,8 @@ p {
 	border-radius: 20px;
 	width: 26%;
 	height: auto;
-	padding-left: 20px;
-	padding-right: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
 	margin-left: 50px;
 	margin-right: 50px;
 	position: relative;
@@ -545,6 +562,7 @@ p {
 main {
 	display: flex;
 	width: 100%;
+	justify-content: space-between;
 }
 
 #activitesection {
@@ -557,10 +575,12 @@ main {
     margin-left: 50px;
     margin-right: 50px;
     width: 100%;
+    position: relative;
 }
 
 #activitesection h3 {
 	font-size: 1.9em;
+	font-weight: bolder;
 
 }
 
@@ -578,18 +598,19 @@ main {
 	font-size: 1.3em;
 	padding-left: 15px;
 	padding-top: 10px;
+	font-weight: bold;
 }
 
 footer h5 {
 	font-size: 1.3em;
-	margin-left: 50px;
+	margin-left: 40px;
 }
                                                                                  
 footer ul li {
 	font-size: 1.1em;
-	padding-bottom: 15px;
-	margin-left: 50px;
 	justify-content: space-between;
+	list-style-type: none;
+	padding-bottom: 5px;
 }
 
 .activite1 {
@@ -666,17 +687,20 @@ footer {
 	display: flex;
 	width: 100%;
 	height: auto;
-	padding: 5px;
 	cursor: pointer;
+	justify-content: flex-start;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
 
 }
 
 .apropos,
 .noshebergements,
 .assistance {
-  	margin-right: 13vw;
-    margin-left: 3.5vw;
     display: block;
+    margin-right: 18vw;
+
 }
 
 .apropos,
@@ -693,17 +717,17 @@ footer {
 	.activite6 {
 		width: 350px;
 	}
+	.boxhebergement {
+		width: 16vw;
+		padding: 5px;
+		height: 12vw;
+	}
 }
 
 @media screen and (max-width: 1600px){
-	.boxhebergement {
-		width: 16vw;
-		margin-right: 10px;
-		height: 17vw;
-		padding-bottom: 10px;
-	}
-	.etoiles {
-		font-size: 17px;
+	.etoiles,
+	.etoilesheb {
+		font-size: 15px;
 	}
 	.activite1,
 	.activite2,
@@ -716,17 +740,19 @@ footer {
 	.activites h4 {
 		font-size: 1.2em;
 	}
+	.boxhebergement {
+		width: 19vw;
+		padding: 5px;
+		height: 13.5vw;
+	}
+	.lespluspopulaires,
+	.container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 @media screen and (max-width: 1500px){
-	.container {
-		padding-left: 20px;
-	}
-	.lespluspopulaires {
-		padding-left: 10px;
-		padding-right: 25px;
-		margin-left: 20px;
-	}
 	#activitesection h3 {
 		font-size: 1.7em;
 	}
@@ -737,63 +763,48 @@ footer {
 		font-size: 1.5em;
 	}
 	.boxhebergement {
-		height: 19vw;
-		margin-right: 15px;
-	}
-
-}
-
-@media screen and (max-width: 1400px){
-	body {
-		margin-left: 20px;
-	}
-	footer h5 {
-		margin-left: 10px;
-	}                                                                            
-	footer ul li {
-		margin-left: 0px;
-	}
-	.boxhebergement {
-		height: 19vw;
-	}
-	.hebergements p,
-	.hebergements h4 {
-		padding-bottom: 0px;
-	}
-	.lespluspopulaires {
-		margin-right: 50px;
-		padding-right: 20px;
-	}
-}
-
-@media screen and (max-width: 1300px){
-	.container {
-		width: 60%;
-	}
-	.boxhebergement {
-		width: 16.5vw;
-		height: 16vw;
+		width: 19vw;
+		padding: 5px;
+		height: 13vw;
 	}
 	.hebergements p {
-		padding-left: 0px;
 		padding-bottom: 0px;
-		font-size: 0.8em;
 	}
 	.hebergements h4,
 	.afficherplus {
 		font-size: 1em;
-		padding-left: 0px;
 		padding-bottom: 0px;
+	}
+	.populaires h5,
+	.activites h4 {
+		font-size: 1.2em;
+	}
+	.lespluspopulaires {
+		margin-left: 10px;
+	}
+	.container {
+		width: 63%;
+	}
+
+}
+
+@media screen and (max-width: 1300px){
+	.hebergements p {
+		padding-left: 0px;
+		font-size: 0.8em;
+	}
+	.hebergements h4,
+	.afficherplus {
+		padding-left: 0px;
+		padding-bottom: 5px;
 	}
 	.boxpopulaire h5 {
 		font-size: 1.2em;
-		margin: 0;
-		padding-top: 10px;
+		padding-top: 5px;
 	}
 
 	.boxpopulaire p {
 		font-size: 1em;
-		padding-bottom: 20px;
 	}
 	.etoilesheb {
 		padding-left: 0px;
@@ -837,20 +848,17 @@ footer {
 	.activite6 {
     	height: 240px;
 	}
-	.lespluspopulaires {
-		width: 31%;
-		margin-right: 10px;
+	.container {
+		width: 60%;
+	}
+	.boxhebergement {
+		width: 19vw;
+		padding: 0px;
+		height: 14vw;
 	}
 }
 
 @media screen and (max-width: 1200px){
-	.container {
-		width: 60%;
-		padding-left: 30px;
-	}
-	.boxhebergement {
-		height: 18vw;
-	}
 	.imgactivbig {
 		height: 450px;
 	}
@@ -880,20 +888,28 @@ footer {
 	}
 	.activite2 {
     	height: 250px;
-    	margin-bottom: 50px;
-
     }
 	.activite3 {
     	height: 210px;
 	}
 	.activite5 {
     	height: 240px;
-    	margin-bottom: 30px;
 	}
 	.activite6 {
     	height: 240px;
 	}
-
+	.boxhebergement {
+		width: 20vw;
+		padding: 0px;
+		height: 15vw;
+	}
+	.etoiles,
+	.etoilesheb {
+		font-size: 13px;
+	}
+	.container {
+		width: 64%;
+	}
 
 	
 }
@@ -928,29 +944,40 @@ footer {
 	}
 	.activite5 {
     	height: 250px;
-    	margin-bottom: 20px;
 	}
 	.activite2 {
     	height: 250px;
-    	margin-bottom: 60px;
 	}
 	.activite6 {
     	height: 250px;
+	}
+	.hebergements h4,
+	.afficherplus {
+		font-size: 0.8em;
+		padding-bottom: 0px;
+	}
+	.populaires h5,
+	.activites h4 {
+		font-size: 1em;
+	}
+	.hebergements p {
+		font-size: 0.6em;
+	}
+	.boxpopulaire p {
+		font-size: 0.8em;
+	}
+	.container {
+		width: 55%;
+	}
+	.boxhebergement {
+		width: 25vw;
+		height: 15vw;
 	}
 
 	
 }
 
 @media screen and (max-width: 1028px){
-	.container {
-		width: 55%;
-		padding-left: 30px;
-	}
-	.boxhebergement {
-		height: 20vw;
-		width: 22vw;
-		margin-right: 30px;
-	}
 	.imgactivbig {
 		height: 400px;
 	}
@@ -980,7 +1007,6 @@ footer {
 	}
 	.activite2 {
 		height: 220px;
-		margin-bottom: 30px;
 	}
 	.activite3 {
 		height: 210px;
@@ -989,26 +1015,11 @@ footer {
 	.activite6 {
 		height: 220px;
 	}
-	.activite5 {
-		margin-bottom: 20px;
-	}
-	.hebergements h4,
-	.afficherplus {
-		font-size: 0.9em;
-	}
-	.boxpopulaire h5 {
-		font-size: 1.1em;
-	}
-	.hebergements p {
-		font-size: 0.8em;
-	}
-	.boxpopulaire p {
-		font-size: 1em;
-	}
 	.etoiles,
 	.etoilesheb {
 		font-size: 13px;
 	}
+	
 
 }
 
@@ -1016,22 +1027,9 @@ footer {
 	main {
     	flex-direction: column-reverse;
   	}
-  	.lespluspopulaires {
-    	width: 90%;
-   	    margin-bottom: 30px;
-   	    padding-left: 40px;
-    }
-
     .charticon {
     	font-size: 3vw;
     }
-  
-  	.boxpopulaire {
-    	width: 26vw;
-    	height: 25vw;
-    	margin-right: 15px;
-    	padding: 0px;
-  	}
   	.boxpopulaire h5 {
 		font-size: 1.1em;
 		padding-left: 5px;
@@ -1047,51 +1045,30 @@ footer {
 	.hebergements p {
 		font-size: 0.8em;
 	}
-    .container {
-    	width: 94%;
-   	    padding-left: 7px;
-   	    margin-left: 15px;
-   	    padding-left: 25px;
-    }
     #hebergements {
     	font-size: 1.4em;
     }
-    .boxhebergement {
-    	width: 25vw;
-    	height: 18vw;
-    }
     .imagepopulaire {
     	margin-right: 0px;
+    	height: 100%;
     }
     .etoiles,
     .etoilesheb {
     	font-size: 1.3vw;
     }
-
     .etoiles {
     	padding-left: 5px;
     }
     .imagepopulaire {
-    	width: 100%;
-    	height: 100px;
-    	border-bottom-left-radius: 0px;
-    	border-top-right-radius: 20px;
+    	width: 30%;
+    	height: 100%;
+    	border-bottom-left-radius: 20px;
+    	border-top-left-radius: 20px;
 
     }
-    .apropos,
-	.noshebergements,
-	.assistance {
-  		margin-right: 8vw;
-    	margin-left: 5px;
-	}
-	footer {
-		margin-left: 15px;
-		width: 92.5%;
-	}
 	#activitesection {
 		width: 100%;
 		height: 800px;
-		margin-left: 0px;
 		flex-direction: column;
 	}
 	.activite1,
@@ -1102,8 +1079,10 @@ footer {
 	.activite6 {
 		width: 360px;
 		height: 180px;
-		margin-bottom: 20px;
-		margin-right: 10px;
+		margin-bottom : 20px ;
+		margin-right: 10px ;
+		margin-left : 10px ;
+		flex-direction: column;
 	}
 	.imgactivbig,
 	.imgactiv1,
@@ -1111,32 +1090,35 @@ footer {
 	.imgactiv3,
 	.imgactiv4 {
 		height: 120px;
-		margin-bottom: 10px;
 	}
-	.activites {
-		margin-left: 0px;
+	.lespluspopulaires,
+	.container,
+	.poptitle {
+		width: 100%;
+		position: relative;
+		margin-left: 50px;
+		margin-right: 50px;
+
 	}
-	.info {
-		margin-left: 12px;
+	.lespluspopulaires,
+	.container {
+		margin-bottom: 30px;
 	}
-	.logo {
-		margin-left: 12px;
+	.boxpopulaire {
+		width: 30vw;
+		height: 15vw;
+		padding: 0px;
 	}
-	.filtres {
-		margin-left: 12px;
+	.boxhebergement {
+		width: 28vw;
+		height: 17vw;
+		padding: 0px;
 	}
-	.recherche {
-		margin-left: 12px;
+	.poptitle {
+		margin-left: 10px;
 	}
-	nav ul li {
-    	margin-right: 12px;
-    }
-    .category-head {
-    	margin-left: 12px;
-    }
-    #activitesection,
-    .container {
-		padding-left: 12px;
+	.hebergements p {
+		padding-bottom: 0px;
 	}
 
 }
@@ -1186,17 +1168,17 @@ footer {
 		width: 120px;
 	}
 	.boxpopulaire {
-    	width: 90%;
-    	height: 22vw;
+    	width: 100%;
+    	height: 24vw;
   	}
 	.boxpopulaire p {
 		font-size: 1.1em;
-		padding-bottom: 5px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
 	}
 	.hebergements p,
 	footer ul li {
 		font-size: 0.9em;
-		padding-bottom: 5px;
 	}
 	.boxpopulaire h5 {
 		font-size: 1.2em;
@@ -1205,24 +1187,17 @@ footer {
 	.hebergements h4,
 	.afficherplus {
 		font-size: 1em;
-		padding-bottom: 0px;
 	}
   	h3 {
     	font-size: 1.6vw;
   	}
-  	.etoiles,
-  	.etoileheb {
-    	font-size: 1.4vw;
-  	}
   	.boxhebergement {
-		height: 35vw;
+		height: 10vw;
 		width: 40vw;
-		margin-right: 10px;
 	}
 	.imagepopulaire {
 		width: 30%;
 		height: 100%;
-		margin-right: 10px;
 	}
 	.etoiles,
 	.etoilesheb {
@@ -1232,25 +1207,6 @@ footer {
 	footer h5 {
 		font-size: 1.2em;
 	}
-	.apropos,
-	.noshebergements,
-	.assistance {
-  		margin-right: 9vw;
-	}
-	.container {
-		width: 90%;
-		margin-left: 15px;
-	}
-	.lespluspopulaires {
-		width: 85%;
-		margin-left: 15px;
-	}
-	body,
-	#activitesection {
-		margin-left: 15px;
-	}
-
-	
 
 }
 
@@ -1270,7 +1226,6 @@ footer {
 	.imgactiv3,
 	.imgactiv4 {
 		height: 110px;
-		margin-bottom: 10px;
 	}
 	.flex-container {
     	width: 100%;
@@ -1279,19 +1234,6 @@ footer {
     	-ms-flex-direction: column-reverse;
     	flex-direction: column-reverse;
   	}
-  	.sinscrire {
-  		margin-left: 40vw;
-  	}
-  	nav ul {
-    	width: 100%;
-    	padding-left: 0;
-   	    margin-right: 0px;
-  	}
-  	nav ul li {
-    	border-bottom: solid 2.5px #f2f2f2;
-    	padding-bottom: 15px;
-    	margin-right: 100px;
-    }
     .menuheb:hover {
     	border-bottom: 2.5px solid;
     	border-bottom-color: #0065FC;
@@ -1339,12 +1281,6 @@ footer {
 	.imgheb {
 		height: 150px;
 	}
-	.lespluspopulaires {
-		width: 84%;
-	}
-	nav ul li {
-    	margin-right: 85px;
-	}
 }	
 
 @media screen and (max-width: 600px){
@@ -1363,7 +1299,6 @@ footer {
 	.imgactiv3,
 	.imgactiv4 {
 		height: 110px;
-		margin-bottom: 10px;
 	}
 	#activitesection,
 	.activites {
@@ -1381,89 +1316,36 @@ footer {
 	.recherche p {
 		font-size: 1.1em;
 	}
-	nav ul li {
-    	margin-right: 50px;
-    }
-    .category-head {
-    	margin-left: 5px;
-    }
     .searchfield {
     	width: 250px;
-    }
-    .imagepopulaire {
-    	width: 100%;
-    	height: 110px;
-    }
-    .boxpopulaire {
-    	height: 40vw;
-    	width: 100%;
     }
     .icontextfilters {
 		width: 235px;
 		height: 30px;
-		margin-right: 5px;
 	}
 	.filterdescription {
 		width: 140px;
 		height: 20px;
 		font-size: 1em;
-		margin-right: 0px;
 	}
 	h2 {
 		font-size: 1.2em;
-		margin-right: 5px;
 	}
 	.charticon {
 		font-size: 1.7em;
 	}
-	.container {
-		width: 86.5%;
-		margin-left: 20px;
-	}
 	.boxhebergement {
 		height: 45vw;
 	}
-	.lespluspopulaires {
-		width: 80%;
-	}
-	#activitesection {
-		margin-left: 20px;
-	}
-	nav ul li {
-    	margin-right: 35px;
-	}
 }
 @media screen and (max-width: 500px){
-	.searchfield {
-    	width: 230px;
-    }
-    .lespluspopulaires {
-		padding-left: 20px;
-		margin-left: 3px;
-	}
-	.boxpopulaire {
-    	width: 100%;
-    	height: 20vw;
-  	}
-  	.container {
-  		width: 85%;
-  		margin-left: 8px;
-  		padding-right: 15px;
-  	}
-  	.imagepopulaire {
-    	width: 100%;
-    	height: 150px;
-    }
-    .boxhebergement {
-    	width: 100%;
-    }
     .activite1,
 	.activite2,
 	.activite3,
 	.activite4,
 	.activite5,
 	.activite6 {
-		width: 90%;
+		width: 100%;
 	}
 	.lespluspopulaires h3,
     #activitesection h3 {
@@ -1475,16 +1357,6 @@ footer {
 	h1 {
 		font-size: 1.7em;
 	}
-	.boxhebergement,
-	.boxpopulaire {
-		height: 60vw;
-	}
-	footer {
-		width: 90%;
-	}
-	#activitesection {
-		margin-left: 0px;
-	}
 	nav ul li {
     	margin-right: 5px;
 	}
@@ -1494,6 +1366,11 @@ footer {
 		align-items: center;
     	font-size: 0.7em;
     	padding-left: 12px;
+	}
+	#activitesection {
+		margin-left: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
@@ -1505,13 +1382,8 @@ footer {
 		width: 170px;
 		height: 20px;
 		font-size: 1.2em;
-		margin-right: 0px;
-	}
-	.info {
-		margin-left: 5px;
 	}
 	.logo {
-		margin-left: 5px;
 		width: 110px;
 	}
 	h1 {
@@ -1519,12 +1391,6 @@ footer {
 	}
 	.recherche p {
 		font-size: 1em;
-	}
-	.filtres {
-		margin-left: 5px;
-	}
-	.recherche {
-		margin-left: 5px;
 	}
 	.searchfield {
 		font-size: 1em;
@@ -1536,12 +1402,6 @@ footer {
 	.filterdescription {
 		font-size: 1em;
 	}
-	.sinscrire {
-  		margin-left: 30vw;
-  	}
-  	nav ul li {
-    	margin-right: 0px;
-    }
     .menuheb,
 	.menuactiv,
 	.sinscrire {
@@ -1550,19 +1410,9 @@ footer {
 	.flex-container {
 		width: 100%;
 	}
-	.lespluspopulaire,
-	.container,
-	#activitesection {
-		margin-left: 0px;
-		margin-right: 0px;
-	}
 	.boxpopulaire,
 	.boxhebergement {
 		height: 62vw;
-	}
-	.hebergements p,
-	.populaires p {
-		padding-bottom: 0px;
 	}
 	.imgheb,
 	.imagepopulaire {
@@ -1579,34 +1429,26 @@ footer {
 	footer h5,
 	.activites h4 {
 		font-size: 1.1em;
-		padding-bottom: 0px;
 	}
 	.hebergements h4,
 	.afficherplus {
 		font-size: 0.9em;
-		padding-bottom: 0px;
 	}
 	.boxpopulaire p {
 		font-size: 0.9em;
-		padding-bottom: 5px;
 	}
 	.hebergements p,
 	footer ul li {
 		font-size: 0.8em;
-		padding-bottom: 5px;
 	}
 	.charticon {
 		font-size: 1.3em;
-	}
-	.poptitle {
-		width: 100%;
 	}
 	.iconinfo {
 		width: 25px;
 		height: 25px;
 		align-items: center;
     	font-size: 0.7em;
-    	padding-left: 12px;
 	}
 
 	
