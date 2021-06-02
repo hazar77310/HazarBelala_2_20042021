@@ -554,21 +554,20 @@ main {
     flex-direction: column;
     border-radius: 20px;
     margin-top: 70px;
+    margin-left: 50px;
     margin-right: 50px;
     width: 100%;
 }
 
 #activitesection h3 {
 	font-size: 1.9em;
-	margin-left: 50px;
+
 }
 
 .activites {
 	display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 50px;
-    margin-right: 50px;
     height: 600px;
     margin-bottom: 50px;
     background-color: #ffffff;
@@ -1049,7 +1048,7 @@ footer {
 		font-size: 0.8em;
 	}
     .container {
-    	width: 100%;
+    	width: 94%;
    	    padding-left: 7px;
    	    margin-left: 15px;
    	    padding-left: 25px;
@@ -1092,7 +1091,7 @@ footer {
 	#activitesection {
 		width: 100%;
 		height: 800px;
-		margin-left: 5px;
+		margin-left: 0px;
 		flex-direction: column;
 	}
 	.activite1,
@@ -1105,7 +1104,6 @@ footer {
 		height: 180px;
 		margin-bottom: 20px;
 		margin-right: 10px;
-		margin-left: 10px;
 	}
 	.imgactivbig,
 	.imgactiv1,
@@ -1116,7 +1114,7 @@ footer {
 		margin-bottom: 10px;
 	}
 	.activites {
-		margin-left: 10px;
+		margin-left: 0px;
 	}
 	.info {
 		margin-left: 12px;
@@ -1218,8 +1216,8 @@ footer {
   	}
   	.boxhebergement {
 		height: 35vw;
-		width: 30vw;
-		margin-right: 5px;
+		width: 40vw;
+		margin-right: 10px;
 	}
 	.imagepopulaire {
 		width: 30%;
@@ -1240,11 +1238,20 @@ footer {
   		margin-right: 9vw;
 	}
 	.container {
-		width: 95%;
+		width: 90%;
+		margin-left: 15px;
 	}
 	.lespluspopulaires {
-		width: 100%;
+		width: 85%;
+		margin-left: 15px;
 	}
+	body,
+	#activitesection {
+		margin-left: 15px;
+	}
+
+	
+
 }
 
 @media screen and (max-width: 700px){
@@ -1256,7 +1263,6 @@ footer {
 	.activite6 {
 		width: 250px;
 		height: 180px;
-		margin-left: 10px;
 	}
 	.imgactivbig,
 	.imgactiv1,
@@ -1267,7 +1273,7 @@ footer {
 		margin-bottom: 10px;
 	}
 	.flex-container {
-    	width: 150vw;
+    	width: 100%;
     	-webkit-box-orient: vertical;
     	-webkit-box-direction: reverse;
     	-ms-flex-direction: column-reverse;
@@ -1276,18 +1282,15 @@ footer {
   	.sinscrire {
   		margin-left: 40vw;
   	}
-  	body {
-  		width: 100%;
-  	}
   	nav ul {
     	width: 100%;
     	padding-left: 0;
-   	    margin-right: 0;
+   	    margin-right: 0px;
   	}
   	nav ul li {
     	border-bottom: solid 2.5px #f2f2f2;
     	padding-bottom: 15px;
-    	margin-right: 40px;
+    	margin-right: 100px;
     }
     .menuheb:hover {
     	border-bottom: 2.5px solid;
@@ -1330,13 +1333,18 @@ footer {
 		border-color: #f2f2f2;
 	}
 	.boxhebergement {
-		width: 85%;
+		width: 100%;
 		height: 40vw;
 	}
 	.imgheb {
 		height: 150px;
 	}
-	
+	.lespluspopulaires {
+		width: 84%;
+	}
+	nav ul li {
+    	margin-right: 85px;
+	}
 }	
 
 @media screen and (max-width: 600px){
@@ -1374,7 +1382,7 @@ footer {
 		font-size: 1.1em;
 	}
 	nav ul li {
-    	margin-right: 0px;
+    	margin-right: 50px;
     }
     .category-head {
     	margin-left: 5px;
@@ -1409,21 +1417,29 @@ footer {
 		font-size: 1.7em;
 	}
 	.container {
-		width: 89%;
-		margin-left: 12px;
+		width: 86.5%;
+		margin-left: 20px;
 	}
 	.boxhebergement {
 		height: 45vw;
 	}
+	.lespluspopulaires {
+		width: 80%;
+	}
+	#activitesection {
+		margin-left: 20px;
+	}
+	nav ul li {
+    	margin-right: 35px;
+	}
 }
-
 @media screen and (max-width: 500px){
 	.searchfield {
     	width: 230px;
     }
     .lespluspopulaires {
 		padding-left: 20px;
-		margin-left: 0px;
+		margin-left: 3px;
 	}
 	.boxpopulaire {
     	width: 100%;
@@ -1466,6 +1482,19 @@ footer {
 	footer {
 		width: 90%;
 	}
+	#activitesection {
+		margin-left: 0px;
+	}
+	nav ul li {
+    	margin-right: 5px;
+	}
+	.iconinfo {
+		width: 20px;
+		height: 25px;
+		align-items: center;
+    	font-size: 0.7em;
+    	padding-left: 12px;
+	}
 }
 
 @media screen and (max-width: 410px){
@@ -1477,14 +1506,6 @@ footer {
 		height: 20px;
 		font-size: 1.2em;
 		margin-right: 0px;
-	}
-	.activite1,
-	.activite2,
-	.activite3,
-	.activite4,
-	.activite5,
-	.activite6 {
-		margin-left: 5px;
 	}
 	.info {
 		margin-left: 5px;
@@ -1580,4 +1601,13 @@ footer {
 	.poptitle {
 		width: 100%;
 	}
+	.iconinfo {
+		width: 25px;
+		height: 25px;
+		align-items: center;
+    	font-size: 0.7em;
+    	padding-left: 12px;
+	}
+
+	
 }
