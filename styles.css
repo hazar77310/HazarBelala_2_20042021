@@ -164,8 +164,9 @@ header {
 	border-radius: 60px;
 	border-color: #F2F2F2;
 	width: 290px;
-	height: 50px;
+	height: 51px;
 	margin-bottom: 15px;
+	padding-bottom: 3px;
 	
 
 }
@@ -374,8 +375,8 @@ h5 {
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
-	width: 23px;
-	height: 23px;
+	width: 21.5px;
+	height: 21.5px;
 	position: relative;
   	display: inline-flex;
   	color: #0065FC;
@@ -391,8 +392,8 @@ h5 {
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
-	width: 23px;
-	height: 23px;
+	width: 21.5px;
+	height: 21.5px;
 	position: relative;
   	display: inline-flex;
   	color: #0065FC;
@@ -407,8 +408,8 @@ h5 {
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
-	width: 23px;
-	height: 23px;
+	width: 21.5px;
+	height: 21.5px;
 	position: relative;
   	display: inline-flex;
   	color: #0065FC;
@@ -423,8 +424,8 @@ h5 {
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
-	width: 23px;
-	height: 23px;
+	width: 21.5px;
+	height: 21.5px;
 	position: relative;
   	display: inline-flex;
   	color: #0065FC;
@@ -1349,12 +1350,12 @@ footer {
 		height: 45vw;
 	}
 	.research {
-		width: 400px;
+		width: 380px;
 	}
 	.searchfield {
 		border-color: transparent;
 		height: 50px;
-		width: 330px;
+		width: 310px;
 		font-size: 1.1em;
 	}
 	.sinscrire {
@@ -1436,13 +1437,6 @@ footer {
 		margin-left: 5px;
 		margin-right: 0px;
 	}
-	.iconeconomique,
-	.iconanimal,
-	.iconchild,
-	.iconheart {
-		width: 20px;
-		height: 20px;
-	}
 	.filters {
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -1461,9 +1455,6 @@ footer {
 }
 
 @media screen and (max-width: 410px){
-	.searchfield {
-    	width: 210px;
-    }
 	.logo {
 		width: 110px;
 	}
@@ -1532,10 +1523,12 @@ footer {
 	.filterdescription {
 		width: 140px;
 		height: 20px;
-		font-size: 0.9em;
 	}
 	.imgheb {
 		height: 120px;
+	}
+	.research {
+		width: 230px;
 	}
 
 	
