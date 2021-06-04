@@ -618,7 +618,6 @@ footer ul li {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-size: contain;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 6px 3px #b1b1b14b;
@@ -630,7 +629,6 @@ footer ul li {
     display: flex;
     flex-direction: column;
     height:100%;
-    background-size: contain;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 6px 3px #b1b1b14b;
@@ -1268,25 +1266,6 @@ footer {
 	.imgactiv4 {
 		height: 110px;
 	}
-	.flex-container {
-    	width: 100%;
-    	-webkit-box-orient: vertical;
-    	-webkit-box-direction: reverse;
-    	-ms-flex-direction: column-reverse;
-    	flex-direction: column-reverse;
-		position: relative;
-		justify-content: space-between;
-	}
-    .menuheb:hover {
-    	border-bottom: 2.5px solid;
-    	border-bottom-color: #0065FC;
-    	border-top-color: transparent;
-	}
-    .menuactiv:hover {
-    	border-bottom: 2.5px solid;
-    	border-bottom-color: #0065FC;
-    	border-top-color: transparent;
-	}
 	.logo {
 		width: 150px;
 	}
@@ -1320,21 +1299,9 @@ footer {
 	.imgheb {
 		height: 150px;
 	}
-	nav ul {
-		width: 100%;
-		border-bottom-color: black;
-		border-bottom: 1px solid;
-		padding-bottom: 15px;
-	}
-	.sinscrire {
-		margin-left: 62vw;
-	}
+	.sinscrire,
 	.menuactiv {
-		margin-left: 28vw;
-	}
-	.menuheb {
-		margin-left: 0;
-	}
+		padding-left: 10px;
 
 
 }	
@@ -1395,12 +1362,38 @@ footer {
 		width: 310px;
 		font-size: 1.1em;
 	}
+	.flex-container {
+    	width: 100%;
+    	-webkit-box-orient: vertical;
+    	-webkit-box-direction: reverse;
+    	-ms-flex-direction: column-reverse;
+    	flex-direction: column-reverse;
+		position: relative;
+		border-bottom: 1px solid black;
+		justify-content: space-between;
+	}
+    .menuheb:hover {
+    	border-bottom: 2.5px solid;
+    	border-bottom-color: #0065FC;
+    	border-top-color: transparent;
+	}
+    .menuactiv:hover {
+    	border-bottom: 2.5px solid;
+    	border-bottom-color: #0065FC;
+    	border-top-color: transparent;
+	}
 	.sinscrire {
-		margin-left: 58vw;
+		margin-left: 65vw;
+	}
+	.menuheb {
+		margin: 0;
+		padding-left: 0;
+		text-align: left;
 	}
 	.menuactiv {
-		margin-left: 16vw;
+		padding-left: 25vw;
 	}
+
 }
 
 @media screen and (max-width: 500px){
