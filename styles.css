@@ -192,12 +192,11 @@ header {
 
 .filtres {
 	margin-left: 50px;
-	display: flex;
 
 }
 
 .filters {
-	display: flex;
+	display: block;
 	width: 100%;
 }
 
@@ -259,7 +258,6 @@ header {
 	border-radius: 20px;
 	background-color: #ffffff;
 	border-color: #ffffff;
-	display: flex;
 	width: 16.5vw;
 	padding: 5px;
 	height: 12vw;
@@ -269,7 +267,6 @@ header {
 
 
 h2 {
-	margin-left: 0px;
 	font-weight: bold;
 	font-size: 1.5em;
 }
@@ -280,11 +277,11 @@ h2 {
 
 
 h3 {
+	display: block; 
 	font-size: 1.7em;
 	border-radius: 20px;
 	border-color: #f2f2f2;
 	width: 800px;
-	display: block;
 	justify-content: space-between;
 	font-weight: bolder;
 
@@ -534,7 +531,7 @@ p {
 .lespluspopulaires {
 	border: 1px solid;
 	border-color: #F2F2F2;
-	display: flex;
+	display: block;
 	background-color: #F2F2F2;
 	flex-direction: column;
 	border-radius: 20px;
@@ -779,7 +776,6 @@ footer {
 		font-size: 1.2em;
 	}
 	.lespluspopulaires {
-		margin-left: 10px;
 	}
 	.container {
 		width: 63%;
@@ -1060,7 +1056,6 @@ footer {
     	font-size: 1.4em;
     }
     .imagepopulaire {
-    	margin-right: 0px;
     	height: 100%;
     }
     .etoiles,
@@ -1090,10 +1085,8 @@ footer {
 	.activite6 {
 		width: 350px;
 		height: 170px;
-		margin-bottom : 20px ;
-		margin-right: 10px ;
-		margin-left : 10px ;
 		flex-direction: column;
+		margin-bottom: 15px;
 	}
 	.imgactivbig,
 	.imgactiv1,
@@ -1107,13 +1100,6 @@ footer {
 	.poptitle {
 		width: 100%;
 		position: relative;
-		margin-left: 50px;
-		margin-right: 50px;
-
-	}
-	.lespluspopulaires,
-	.container {
-		margin-bottom: 30px;
 	}
 	.boxpopulaire {
 		width: 30vw;
@@ -1124,9 +1110,6 @@ footer {
 		width: 28vw;
 		height: 17vw;
 		padding: 0px;
-	}
-	.poptitle {
-		margin-left: 10px;
 	}
 	.hebergements p {
 		padding-bottom: 0px;
@@ -1146,6 +1129,30 @@ footer {
 		height: 51px;
 		box-shadow: 0 0 1px 1px #0065FC;
 	}
+	.logo,
+	.activites,
+	footer,
+	#activitesection h3 {
+		margin: auto;
+	}
+	#activitesection, 
+	.container,
+	.info,
+	.lespluspopulaires,
+	.recherche {
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: auto;
+		margin-bottom: 20px;
+	}
+	.filters {
+		margin: 0;
+		flex-direction: column;
+		padding: auto;
+	}
+	.container {
+		background-color: #ffffff;
+	}
 
 }
 
@@ -1157,7 +1164,6 @@ footer {
 	.activite5,
 	.activite6 {
 		width: 300px;
-		margin-right: 10px;
 	}
 	.menuheb,
 	.menuactiv,
@@ -1213,6 +1219,15 @@ footer {
 	footer h5 {
 		font-size: 1.2em;
 	}
+	.apropos,
+	.noshebergements,
+	.assistance {
+		margin: 0;
+	}
+	footer {
+		margin: 0;
+		padding: 0;
+	}
 
 }
 
@@ -1261,8 +1276,6 @@ footer {
   	.searchfa {
 		background-color: #0065fc;
 		color: white;
-		border-color: #0065fc;
-		margin-left: 0px;
 		width: 60px;
 		border-radius: 10px;
 		height: 54px;
@@ -1379,9 +1392,6 @@ footer {
     #activitesection h3 {
 		font-size: 1.5em;
 	}
-	#activitesection h3 {
-		margin-left: 5px;
-	}
 	#hebergements {
 		font-size: 1.3em;
 	}
@@ -1399,14 +1409,9 @@ footer {
     	padding-left: 12px;
     	margin-right: 10px;
 	}
-	#activitesection {
-		margin-left: 0px;
+	#activitesection {	
 		padding-left: 20px;
 		padding-right: 20px;
-		margin-top: 10px;
-	}
-	.activites {
-		margin-left: 0px;
 	}
 	.sinscrire {
 		margin-left: 50vw;
@@ -1424,22 +1429,6 @@ footer {
 		border-color: transparent;
 		height: 50px;
 		width: 250px;
-	}
-	.logo,
-	.recherche,
-	.container,
-	.lespluspopulaires,
-	.filtres,
-	.info {
-		margin-left: 15px;
-	}
-	.flex-container {
-		margin-left: 5px;
-		margin-right: 0px;
-	}
-	.filters {
-		flex-direction: column;
-		flex-wrap: wrap;
 	}
 	.boxhebergement {
 		height: 55vw;
