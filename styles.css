@@ -196,8 +196,8 @@ header {
 }
 
 .filters {
-	display: block;
 	width: 100%;
+	display: flex;
 }
 
 .info {
@@ -374,6 +374,7 @@ h5 {
 	border-color: #DEEBFF;
 	width: 21.5px;
 	height: 21.5px;
+	margin: auto;
 	position: relative;
   	display: inline-flex;
   	color: #0065FC;
@@ -391,6 +392,7 @@ h5 {
 	border-color: #DEEBFF;
 	width: 21.5px;
 	height: 21.5px;
+	margin: auto;
 	position: relative;
   	display: inline-flex;
   	color: #0065FC;
@@ -407,6 +409,7 @@ h5 {
 	border-color: #DEEBFF;
 	width: 21.5px;
 	height: 21.5px;
+	margin: auto;
 	position: relative;
   	display: inline-flex;
   	color: #0065FC;
@@ -423,6 +426,7 @@ h5 {
 	border-color: #DEEBFF;
 	width: 21.5px;
 	height: 21.5px;
+	margin: auto;
 	position: relative;
   	display: inline-flex;
   	color: #0065FC;
@@ -737,15 +741,21 @@ footer {
 		font-size: 1.2em;
 	}
 	.boxhebergement {
-		width: 19vw;
+		width: 16.5vw;
 		padding: 5px;
-		height: 13.5vw;
+		height: 14vw;
 	}
 	.lespluspopulaires,
 	.container {
 		padding-left: 10px;
+	}
+	.container {
 		padding-right: 10px;
 	}
+	.lespluspopulaires {
+		padding-right: 20px;
+	}
+
 }
 
 @media screen and (max-width: 1500px){
@@ -759,9 +769,9 @@ footer {
 		font-size: 1.5em;
 	}
 	.boxhebergement {
-		width: 19vw;
+		width: 17.5vw;
 		padding: 5px;
-		height: 13vw;
+		height: 13.5vw;
 	}
 	.hebergements p {
 		padding-bottom: 0px;
@@ -778,7 +788,7 @@ footer {
 	.lespluspopulaires {
 	}
 	.container {
-		width: 63%;
+		width: 67%;
 	}
 	.boxpopulaire p {
 		padding-bottom: 5px;
@@ -854,7 +864,7 @@ footer {
 	.boxhebergement {
 		width: 19vw;
 		padding: 0px;
-		height: 14vw;
+		height: 15vw;
 	}
 }
 
@@ -1026,6 +1036,13 @@ footer {
 	.etoilesheb {
 		font-size: 13px;
 	}
+	.boxpopulaires {
+		width: 23vw;
+	}
+	.lespluspopulaires {
+		width: 30%;
+		padding-right: 20px;
+	}
 	
 
 }
@@ -1073,7 +1090,7 @@ footer {
 
     }
 	#activitesection {
-		width: 100%;
+		width: 95%;
 		height: 800px;
 		flex-direction: column;
 	}
@@ -1083,7 +1100,7 @@ footer {
 	.activite4,
 	.activite5,
 	.activite6 {
-		width: 350px;
+		width: 360px;
 		height: 170px;
 		flex-direction: column;
 		margin-bottom: 15px;
@@ -1098,7 +1115,7 @@ footer {
 	.lespluspopulaires,
 	.container,
 	.poptitle {
-		width: 100%;
+		width: 95%;
 		position: relative;
 	}
 	.boxpopulaire {
@@ -1132,7 +1149,8 @@ footer {
 	.logo,
 	.activites,
 	footer,
-	#activitesection h3 {
+	#activitesection h3,
+	.filterdescription {
 		margin: auto;
 	}
 	#activitesection, 
@@ -1153,7 +1171,9 @@ footer {
 	.container {
 		background-color: #ffffff;
 	}
-
+	footer {
+		width: 95%;
+	}
 }
 
 @media screen and (max-width: 800px){
@@ -1163,14 +1183,15 @@ footer {
 	.activite4,
 	.activite5,
 	.activite6 {
-		width: 300px;
+		width: 310px;
 	}
 	.menuheb,
 	.menuactiv,
 	.sinscrire {
     	font-size: 1.3em;
 	}
-	h2 {
+	h2,
+	.filterdescription {
 		font-size: 1.3em;
 	}
 	.info p {
@@ -1180,7 +1201,7 @@ footer {
 		width: 120px;
 	}
 	.boxpopulaire {
-    	width: 100%;
+    	width: 95%;
     	height: 24vw;
   	}
 	.boxpopulaire p {
@@ -1238,7 +1259,7 @@ footer {
 	.activite4,
 	.activite5,
 	.activite6 {
-		width: 250px;
+		width: 270px;
 	}
 	.imgactivbig,
 	.imgactiv1,
@@ -1293,7 +1314,7 @@ footer {
 		width: 380px;
 	}
 	.boxhebergement {
-		width: 100%;
+		width: 95%;
 		height: 37vw;
 	}
 	.imgheb {
@@ -1311,6 +1332,9 @@ footer {
 	.menuactiv {
 		margin-left: 28vw;
 	}
+	.menuheb {
+		margin-left: 0;
+	}
 
 
 }	
@@ -1322,8 +1346,8 @@ footer {
 	.activite4,
 	.activite5,
 	.activite6 {
-		width: 85%;
-		height: 180px;
+		width: 95%;
+		height: 160px;
 	}
 	.imgactivbig,
 	.imgactiv1,
@@ -1346,10 +1370,10 @@ footer {
 		font-size: 1.1em;
 	}
     .icontextfilters {
-		width: 205px;
+		width: 195px;
 	}
 	.filterdescription {
-		width: 130px;
+		width: 125px;
 		height: 20px;
 		font-size: 0.9em;
 	}
@@ -1380,14 +1404,6 @@ footer {
 }
 
 @media screen and (max-width: 500px){
-    .activite1,
-	.activite2,
-	.activite3,
-	.activite4,
-	.activite5,
-	.activite6 {
-		width: 100%;
-	}
 	.lespluspopulaires h3,
     #activitesection h3 {
 		font-size: 1.5em;
