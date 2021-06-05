@@ -1283,6 +1283,7 @@ footer {
   	}
   	nav ul li:hover {
     	border-bottom: solid 2.5px #0065fc;
+    	border-top-color: transparent;
     	padding-bottom: 10px;
     	color: #0065FC;
   	}
