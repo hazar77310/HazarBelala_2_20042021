@@ -23,8 +23,7 @@ h4,p {
 
 .flex-container {
 	margin-left: 50px;
-	margin-right: 60px;
-	display: -webkit-box;
+	display: flex;
 
 }
 
@@ -34,56 +33,40 @@ a {
 	
 }
 
-
-
-.menuheb {
-	padding-top: 20px; 
-	color: #0065FC;
-	list-style: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-}
-
-.menuheb:hover {
-    border-top: 2px solid;
-    border-top-color: #0065FC;
-}
-
-
-.menuactiv {
-	list-style: none;
-    display: inline-flex;
-    justify-content: center;
-    padding-left: 50px;
-    align-items: center;
-    font-size: 1.5em;
-    padding-top: 20px; 
-}
-
-.menuactiv:hover {
-    border-top: 2px solid;
-    border-top-color: #0065FC;
-}
-
-.sinscrire {
-	float: right;
-	padding-left: 50px;
-	color: #0065fc;
-	font-weight: bold;
-	list-style: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    padding-top: 20px;
-}
-
 header {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+}
+
+nav {
+  display: flex;
+  padding-right: 0;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 0;
+  margin-right: 2vw;
+}
+nav ul li {
+  border-top: solid 2.5px transparent;
+  padding: 38px 30px 0 30px;
+  font-size: 20px;
+}
+nav ul li:hover {
+  border-top: solid 2.5px #0065fc;
+}
+.menu a:hover {
+  color: #0065fc;
+}
+.sinscrire {
+  font-weight: bolder;
+  font-size: 20px;
+  color: #0065fc;
+  float: right;
+  margin-right: 5vw;
+  padding-top: 26px;
 }
 
 .recherche {
@@ -144,61 +127,42 @@ header {
 	background-color: transparent;
 	color: transparent;
 	border-color: transparent;
+}
 
+.filters {
+  margin-left: 50px;
 }
 .category-head {
-	margin-left: 50px;
-	display: flex;
-	flex-wrap: wrap;
-
-
+  margin-bottom: 20px;
 }
-
+.filtres {
+  float: left;
+  margin-right: 2.2vw;
+}
 .icontextfilters {
-	font-weight: bold;
-	cursor: pointer;
-	display: inline-block;
-	justify-content: center;
-	border: 3px solid;
-	margin-right: 25px;
-	border-radius: 60px;
-	border-color: #F2F2F2;
-	width: 290px;
-	height: 51px;
-	margin-bottom: 15px;
-	padding-bottom: 3px;
-	
-
-}
-
-.icontextfilters:hover {
-	color: #0065fc;
-	font-weight: bold;
-	background-color: #DEEBFF;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 1.5vmax;
+  border-top: solid #e0e0e0 2px;
+  border-right: solid #e0e0e0 2px;
+  border-bottom: solid #e0e0e0 2px;
+  border-left: none;
+  border-radius: 60px;
+  margin-bottom: 15px;
+  padding-right: 5em;
+  padding-top: 0.05em;
+  padding-bottom: 0.05em;
+  padding-left: 0;
 }
 
 .filterdescription {
 	display: inline-block;
-	border: 1px solid;
-	border-color: transparent;
-	width: 210px;
-	height: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-right: 10px;
-	margin-top: 0px;
-	font-size: 1.5em;
+	font-size: 1.3em;
+}
+.icontextfilters:hover {
+  background-color: #DEEBFF;
 }
 
-.filtres {
-	margin-left: 50px;
-
-}
-
-.filters {
-	width: 100%;
-	display: flex;
-}
 
 .info {
   	margin-top: 15px;
@@ -325,7 +289,7 @@ h3 {
 
 .boxpopulaire p {
 	font-size: 1.1em;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 
 }
 
@@ -367,7 +331,7 @@ h5 {
 
 
 .iconeconomique {
-	padding: 15px;
+	padding: 17px 15px 17px 16px;
 	padding-bottom: 15px;
 	border: 1px solid;
 	border-radius: 50%;
@@ -385,13 +349,10 @@ h5 {
 }
 
 .iconchild {
-	padding: 15px;
-	padding-bottom: 15px;
+	padding: 16px 18px 17px 20px;
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
-	width: 21.5px;
-	height: 21.5px;
 	margin: auto;
 	position: relative;
   	display: inline-flex;
@@ -402,8 +363,7 @@ h5 {
 }
 
 .iconheart {
-	padding: 15px;
-	padding-bottom: 15px;
+	padding: 17px 16px 17px 18px;
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
@@ -419,8 +379,7 @@ h5 {
 }
 
 .iconanimal {
-	padding: 15px;
-	padding-bottom: 15px;
+	padding: 17px 16px 17px 18px;
 	border: 1px solid;
 	border-radius: 50%;
 	border-color: #DEEBFF;
@@ -920,6 +879,10 @@ footer {
 	.container {
 		width: 64%;
 	}
+	.populaires p,
+	.hebergements p {
+		padding-bottom: 5px;
+	}
 
 	
 }
@@ -1075,7 +1038,7 @@ footer {
     }
     .etoiles,
     .etoilesheb {
-    	font-size: 1.3vw;
+    	font-size: 1.2vw;
     }
     .etoiles {
     	padding-left: 5px;
@@ -1123,7 +1086,7 @@ footer {
 	}
 	.boxhebergement {
 		width: 28vw;
-		height: 17vw;
+		height: 20vw;
 		padding: 0px;
 	}
 	.hebergements p {
@@ -1147,8 +1110,7 @@ footer {
 	.logo,
 	.activites,
 	footer,
-	#activitesection h3,
-	.filterdescription {
+	#activitesection h3 {
 		margin: auto;
 	}
 	#activitesection, 
@@ -1183,13 +1145,7 @@ footer {
 	.activite6 {
 		width: 310px;
 	}
-	.menuheb,
-	.menuactiv,
-	.sinscrire {
-    	font-size: 1.3em;
-	}
-	h2,
-	.filterdescription {
+	h2 {
 		font-size: 1.3em;
 	}
 	.info p {
@@ -1299,9 +1255,41 @@ footer {
 	.imgheb {
 		height: 150px;
 	}
-	.sinscrire,
-	.menuactiv {
-		padding-left: 10px;
+	.flex-container {
+    	width: 100vw;
+    	position: relative;
+    	-webkit-box-orient: vertical;
+    	-webkit-box-direction: reverse;
+    	-ms-flex-direction: column-reverse;
+    	flex-direction: column-reverse;
+    	margin-left: 0;
+    }
+    nav ul {
+    	width: 100%;
+    	padding-left: 0;
+    	margin-right: 0;
+  	}
+  	nav ul li {
+    	border-bottom: solid 2.5px #f2f2f2;
+    	padding-bottom: 15px;
+    	padding-left: 0;
+  	}	
+  	.menu {
+    	text-align: center;
+    	width: 100%;
+    	padding-bottom: 15px;
+    	padding-top: 25px;
+
+  	}
+  	nav ul li:hover {
+    	border-bottom: solid 2.5px #0065fc;
+    	padding-bottom: 10px;
+    	color: #0065FC;
+  	}
+  	.sinscrire {
+    	margin-right: 25px;
+    	padding-left: 70vw;
+  	}
 
 
 }	
@@ -1336,13 +1324,8 @@ footer {
 	.recherche p {
 		font-size: 1.1em;
 	}
-    .icontextfilters {
-		width: 195px;
-	}
 	.filterdescription {
-		width: 125px;
-		height: 20px;
-		font-size: 0.9em;
+		font-size: 0.8em;
 	}
 	h2 {
 		font-size: 1.2em;
@@ -1362,37 +1345,6 @@ footer {
 		width: 310px;
 		font-size: 1.1em;
 	}
-	.flex-container {
-    	width: 100%;
-    	-webkit-box-orient: vertical;
-    	-webkit-box-direction: reverse;
-    	-ms-flex-direction: column-reverse;
-    	flex-direction: column-reverse;
-		position: relative;
-		border-bottom: 1px solid black;
-		justify-content: space-between;
-	}
-    .menuheb:hover {
-    	border-bottom: 2.5px solid;
-    	border-bottom-color: #0065FC;
-    	border-top-color: transparent;
-	}
-    .menuactiv:hover {
-    	border-bottom: 2.5px solid;
-    	border-bottom-color: #0065FC;
-    	border-top-color: transparent;
-	}
-	.sinscrire {
-		margin-left: 65vw;
-	}
-	.menuheb {
-		margin: 0;
-		padding-left: 0;
-		text-align: left;
-	}
-	.menuactiv {
-		padding-left: 25vw;
-	}
 
 }
 
@@ -1407,9 +1359,6 @@ footer {
 	h1 {
 		font-size: 1.7em;
 	}
-	nav ul li {
-    	margin-right: 5px;
-	}
 	.iconinfo {
 		width: 20px;
 		height: 25px;
@@ -1422,15 +1371,6 @@ footer {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	.sinscrire {
-		margin-left: 50vw;
-	}
-	.menuactiv {
-		margin-left: 5px;
-	}
-	.menuheb {
-		margin-left: 5px;
-	}
 	.research {
 		width: 320px;
 	}
@@ -1439,6 +1379,13 @@ footer {
 		height: 50px;
 		width: 250px;
 	}
+	.filtres {
+    	width: 100%;
+    	margin: 10px 0px 10px 6px;
+  	}
+  	.filterdescription {
+  		font-size: 0.8em;
+  	}
 	.boxhebergement {
 		height: 55vw;
 	}
@@ -1448,8 +1395,9 @@ footer {
 	.populaires p {
 		padding-bottom: 20px;
 	}
-	
-
+	.icontextfilters {
+		 padding-right: 0.9em;
+	}
 }
 
 @media screen and (max-width: 410px){
@@ -1465,17 +1413,6 @@ footer {
 	.searchfield {
 		font-size: 1em;
 		width: 165px;
-	}
-	.filterdescription {
-		font-size: 1em;
-	}
-    .menuheb,
-	.menuactiv,
-	.sinscrire {
-    	font-size: 0.93em;
-	}
-	.flex-container {
-		width: 100%;
 	}
 	.boxpopulaire {
 		height: 40vw;
@@ -1514,13 +1451,6 @@ footer {
 		height: 25px;
 		align-items: center;
     	font-size: 0.7em;
-	}
-	 .icontextfilters {
-		width: 210px;
-	}
-	.filterdescription {
-		width: 140px;
-		height: 20px;
 	}
 	.imgheb {
 		height: 120px;
