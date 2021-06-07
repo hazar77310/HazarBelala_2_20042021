@@ -318,14 +318,12 @@ h5 {
 	color: #000000;
 	font-size: 20px;
 	background-color: #F2F2F2;
-	margin-left: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
 	justify-content: space-between;
-	width: 67%;
+	width: 63%;
+	padding-left: 40px;
+	padding-right: 40px;
 	height: auto;
 	border-radius: 20px;
-	display: block;
 	padding-bottom: 40px;
 }
 
@@ -487,8 +485,12 @@ p {
 
 .etoilesheb {
 	padding-left: 10px;
-	font-size: 18px;
+	font-size: 0.8vw;
 	padding-bottom: 5px;
+}
+
+.etoiles {
+	font-size: 0.8vw;
 }
 
 .lespluspopulaires {
@@ -500,10 +502,8 @@ p {
 	border-radius: 20px;
 	width: 26%;
 	height: auto;
-	padding-left: 50px;
-	padding-right: 50px;
-	margin-left: 50px;
-	margin-right: 50px;
+	padding-left: 30px;
+	padding-right: 40px;
 	position: relative;
 }
 
@@ -520,8 +520,8 @@ p {
 
 main {
 	display: flex;
-	width: 100%;
 	justify-content: space-between;
+	margin: 0 50px;
 }
 
 #activitesection {
@@ -756,20 +756,22 @@ footer {
 @media screen and (max-width: 1300px){
 	.hebergements p {
 		padding-left: 0px;
-		font-size: 0.8em;
+		padding-bottom: 0px;
+		font-size: 0.7em;
 	}
 	.hebergements h4,
 	.afficherplus {
 		padding-left: 0px;
-		padding-bottom: 5px;
+		padding-bottom: 0x;
+		font-size: 0.9em;
 	}
 	.boxpopulaire h5 {
-		font-size: 1.2em;
+		font-size: 1em;
 		padding-top: 5px;
 	}
 
 	.boxpopulaire p {
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 	.etoilesheb {
 		padding-left: 0px;
@@ -815,14 +817,20 @@ footer {
 	.activite6 {
     	height: 240px;
 	}
-	.container {
-		width: 60%;
-	}
 	.boxhebergement {
-		width: 19vw;
+		width: 18vw;
 		padding: 0px;
-		height: 15vw;
+		height: 13vw;
 	}
+	.container {
+		width: 65%;
+	}
+	.etoilesheb,
+	.etoiles {
+		font-size: 12px;
+	}
+
+
 }
 
 @media screen and (max-width: 1200px){
@@ -867,24 +875,16 @@ footer {
 	.activite6 {
     	height: 240px;
 	}
+	.hebergements p,
+	.populaires p {
+		padding-bottom: 0px;
+	}
 	.boxhebergement {
-		width: 20vw;
+		width: 18vw;
 		padding: 0px;
-		height: 15vw;
-	}
-	.etoiles,
-	.etoilesheb {
-		font-size: 13px;
-	}
-	.container {
-		width: 64%;
-	}
-	.populaires p,
-	.hebergements p {
-		padding-bottom: 5px;
+		height: 14vw;
 	}
 
-	
 }
 
 @media screen and (max-width: 1100px){
@@ -944,13 +944,13 @@ footer {
 	.boxpopulaire p {
 		font-size: 0.8em;
 	}
-	.container {
-		width: 55%;
-	}
 	.boxhebergement {
-		width: 25vw;
+		width: 18vw;
+		padding: 0px;
 		height: 15vw;
 	}
+
+
 
 	
 }
@@ -993,18 +993,26 @@ footer {
 	.activite6 {
 		height: 210px;
 	}
-	.etoiles,
-	.etoilesheb {
-		font-size: 13px;
-	}
 	.boxpopulaires {
 		width: 23vw;
 	}
-	.lespluspopulaires {
-		width: 30%;
-		padding-right: 20px;
+	.hebergements h4,
+	.afficherplus {
+		font-size: 0.7em;
+		padding-bottom: 0px;
 	}
-	
+	.populaires h5,
+	.activites h4 {
+		font-size: 0.9em;
+	}
+	.hebergements p {
+		font-size: 0.5em;
+	}
+	.boxpopulaire p {
+		font-size: 0.7em;
+	}
+
+
 
 }
 
@@ -1114,9 +1122,7 @@ footer {
 		margin: auto;
 	}
 	#activitesection, 
-	.container,
 	.info,
-	.lespluspopulaires,
 	.recherche {
 		margin-right: auto;
 		margin-left: auto;
@@ -1133,6 +1139,11 @@ footer {
 	}
 	footer {
 		width: 95%;
+	}
+	.container,
+	.lespluspopulaires,
+	main {
+		margin: 0;
 	}
 }
 
@@ -1294,6 +1305,9 @@ footer {
     	margin-right: 25px;
     	padding-left: 70vw;
   	}
+  	#activitesection {
+  		width: 95%;
+  	}
 
 
 }	
@@ -1348,6 +1362,9 @@ footer {
 		height: 50px;
 		width: 310px;
 		font-size: 1.1em;
+	}
+	#activitesection h3 {
+		padding-bottom: 20px;
 	}
 
 }
