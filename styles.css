@@ -214,7 +214,7 @@ nav ul li:hover {
 .boxhebergement h4 {
 	font-size: 1.1em;
 	padding-left: 10px;
-	padding-bottom: px;
+	padding-bottom: 0;
 }
 
 .boxhebergement {
@@ -562,15 +562,19 @@ main {
 
 footer h5 {
 	font-size: 1.3em;
-	margin-left: 40px;
+	padding: 0;
 }
                                                                                  
 footer ul li {
 	font-size: 1.1em;
-	justify-content: space-between;
 	list-style-type: none;
 	padding-bottom: 5px;
 }
+
+footer ul {
+	padding: 0;
+}
+
 
 .activite1 {
     width: 405px;
@@ -594,8 +598,8 @@ footer ul li {
 }
 
 .activite2 {
-	flex-basis: 60%;
-	width: 405px;
+		flex-basis: 60%;
+		width: 405px;
     height: 52%;
     border-radius: 20px;
     background-color: #ffffff;
@@ -604,8 +608,8 @@ footer ul li {
 }
 
 .activite3 {
-	flex-basis: 40%;
-	width: 405px;
+		flex-basis: 40%;
+		width: 405px;
     height: 220px;
     border-radius: 20px;
     background-color: #ffffff;
@@ -614,8 +618,8 @@ footer ul li {
 
 
 .activite5 {
-	flex-basis: 45%;
-	width: 405px;
+		flex-basis: 45%;
+		width: 405px;
     height: 48%;
     border-radius: 20px;
     background-color: #ffffff;
@@ -624,17 +628,12 @@ footer ul li {
 }
 
 .activite6 {
-	flex-basis: 45%;
-	width: 405px;
+		flex-basis: 45%;
+		width: 405px;
     height: 48%;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 6px 3px #b1b1b14b;
-}
-
-
-.activitemarseille {
-	width: 100%;
 }
 
 footer {
@@ -642,28 +641,27 @@ footer {
 	background-color: #f2f2f2;
 	border-color: #f2f2f2;
 	display: flex;
-	width: 100%;
 	height: auto;
-	cursor: pointer;
-	justify-content: flex-start;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: auto;
 
 }
 
-.apropos,
 .noshebergements,
 .assistance {
-    display: block;
-    margin-right: 18vw;
+    margin-right: 13vw;
+    margin-left: 9vw;
+}
+
+.apropos {
+    margin-right: 13vw;
+    margin-left: 3vw;
 
 }
 
 .apropos,
 .assistance {
-  	margin-top: 15px;
+    padding-top: 15px;
 }
+
 
 @media screen and (max-width: 1800px){
 	.activite1,
@@ -742,8 +740,6 @@ footer {
 	.activites h4 {
 		font-size: 1.2em;
 	}
-	.lespluspopulaires {
-	}
 	.container {
 		width: 67%;
 	}
@@ -762,7 +758,7 @@ footer {
 	.hebergements h4,
 	.afficherplus {
 		padding-left: 0px;
-		padding-bottom: 0x;
+		padding-bottom: 0px;
 		font-size: 0.9em;
 	}
 	.boxpopulaire h5 {
@@ -1002,13 +998,15 @@ footer {
 		padding-bottom: 0px;
 	}
 	.populaires h5,
-	.activites h4 {
+	.activites h4,
+		footer h5 {
 		font-size: 0.9em;
 	}
 	.hebergements p {
 		font-size: 0.5em;
 	}
-	.boxpopulaire p {
+	.boxpopulaire p,
+	footer ul li {
 		font-size: 0.7em;
 	}
 
@@ -1132,7 +1130,7 @@ footer {
 	.filters {
 		margin: 0;
 		flex-direction: column;
-		padding: auto;
+		padding: 0;
 	}
 	.container {
 		background-color: #ffffff;
@@ -1144,6 +1142,16 @@ footer {
 	.lespluspopulaires,
 	main {
 		margin: 0;
+	}
+	.noshebergements,
+	.assistance {
+    margin-right: 13vw;
+    margin-left: 5vw;
+}
+
+	.apropos {
+    margin-right: 13vw;
+    margin-left: 3vw;
 	}
 }
 
@@ -1213,6 +1221,16 @@ footer {
 	footer {
 		margin: 0;
 		padding: 0;
+	}
+	.noshebergements,
+	.assistance {
+    margin-right: 13vw;
+    margin-left: 6vw;
+}
+
+	.apropos {
+    margin-right: 13vw;
+    margin-left: 3vw;
 	}
 
 }
@@ -1308,6 +1326,16 @@ footer {
   	#activitesection {
   		width: 95%;
   	}
+  	.noshebergements,
+	.assistance {
+    margin-right: 13vw;
+    margin-left: 3.5vw;
+}
+
+	.apropos {
+    margin-right: 13vw;
+    margin-left: 3vw;
+	}
 
 
 }	
