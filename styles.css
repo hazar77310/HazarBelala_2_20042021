@@ -256,8 +256,10 @@ h3 {
 
 .poptitle {
 	display: flex;
+	width: 100%;
 	font-weight: bolder;
 	font-size: 0.9em;
+	justify-content: space-between;
 }
 
 .boxpopulaire {
@@ -485,6 +487,7 @@ main {
     border-radius: 20px;
     width: 100%;
     position: relative;
+    margin-left: 50px;
 }
 
 #activitesection h3 {
@@ -539,7 +542,6 @@ footer ul {
 .activite4 {
     width: 20%;
     display: flex;
-    flex-direction: column;
     height:100%;
     border-radius: 20px;
     background-color: #ffffff;
@@ -552,7 +554,7 @@ footer ul {
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 6px 3px #b1b1b14b;
-    margin-bottom: 84px; 
+    margin-bottom: 92px; 
 }
 
 .activite3 {
@@ -567,17 +569,17 @@ footer ul {
 
 .activite5 {
 		flex-basis: 45%;
-    height: 46%;
+    height: 48%;
     border-radius: 20px;
     background-color: #ffffff;
-    margin-bottom: 53px;
+    margin-bottom: 61px;
     box-shadow: 0 0 6px 3px #b1b1b14b;
     display: flex;
 }
 
 .activite6 {
 		flex-basis: 45%;
-    height: 45%;
+    height: 48%;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 6px 3px #b1b1b14b;
@@ -674,13 +676,14 @@ footer {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: auto;
+    width: 95%;
   }
   .activite2et3,
   .activite5et6 {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .activite1,
   .activite2,
@@ -696,10 +699,10 @@ footer {
   .activite3,
   .activite5,
   .activite6 {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .imgactivbig,
   .imgactiv1,
