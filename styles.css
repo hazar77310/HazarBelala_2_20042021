@@ -483,9 +483,6 @@ main {
     justify-content: space-between;
     flex-direction: column;
     border-radius: 20px;
-    margin-top: 70px;
-    margin-left: 50px;
-    margin-right: 50px;
     width: 100%;
     position: relative;
 }
@@ -532,7 +529,6 @@ footer ul {
 .activite1 {
     width: 20%;
     display: flex;
-    flex-direction: column;
     height: 100%;
     border-radius: 20px;
     background-color: #ffffff;
@@ -565,6 +561,7 @@ footer ul {
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 6px 3px #b1b1b14b;
+    display: flex;
 }
 
 
@@ -575,6 +572,7 @@ footer ul {
     background-color: #ffffff;
     margin-bottom: 53px;
     box-shadow: 0 0 6px 3px #b1b1b14b;
+    display: flex;
 }
 
 .activite6 {
@@ -583,11 +581,11 @@ footer ul {
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 6px 3px #b1b1b14b;
+    display: flex;
 }
 .activite2et3,
 .activite5et6 {
 	width: 20%;
-	height: 100%;
 }
 
 footer {
@@ -649,25 +647,14 @@ footer {
 	}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 992px){
 	main {
-		webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
 	}
 	.lespluspopulaires,
 	.container {
 		width: 95%;
 		margin-bottom: 20px;
-	}
-	#activitesection {
-		width: 95%;
-		height: 800px;
-		webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
 	}
 	.boxpopulaire {
 		width: 30%;
@@ -680,30 +667,49 @@ footer {
 		width: 95%;
 		justify-content: space-between;
 	}
-	.activite1,
-	.activite2,
-	.activite3,
-	.activite4,
-	.activite5,
-	.activite6 {
-		width: 360px;
-		height: 170px;
-		-webkit-box-orient: vertical;
+	 #activitesection {
+    width: 95%;
+  }
+  .activites {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .activite2et3,
+  .activite5et6 {
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: auto;
-	}
-	.imgactivbig,
-	.imgactiv1,
-	.imgactiv2,
-	.imgactiv3,
-	.imgactiv4 {
-		height: 120px;
-	}
+  }
+  .activite1,
+  .activite2,
+  .activite3,
+  .activite4,
+  .activite5,
+  .activite6 {
+    width: 28vw;
+    height: 24vw;
+    margin-bottom: 25px;
+  }
+  .activite2,
+  .activite3,
+  .activite5,
+  .activite6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .imgactivbig,
+  .imgactiv1,
+  .imgactiv2,
+  .imgactiv3,
+  .imgactiv4 {
+    height: 18vw;
+    padding-bottom: 1vw;
+  }
+
 }
 
 @media screen and (max-width: 700px){
