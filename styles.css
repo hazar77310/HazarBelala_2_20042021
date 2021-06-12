@@ -451,7 +451,6 @@ main {
 #activitesection h3 {
 	font-size: 1.7em;
 	font-weight: bolder;
-
 }
 
 .activites {
@@ -595,6 +594,21 @@ footer {
 	.boxpopulaire {
 		height: 140px ;
 	}
+	.box1 {
+		padding-bottom: 20px;
+	}
+	.box2 {
+		padding-bottom: 20px;
+	}
+	.box1,
+	.box2,
+	.box3 {
+		width: 85%;
+	}
+	.imgactiv3 {
+		height: 62%;
+	}
+}
 
 @media screen and (max-width: 992px){
 	main {
@@ -626,7 +640,7 @@ footer {
     margin-bottom: 2.5vw;
   }
   .activite1 {
-    width: 31%;
+    width: 35%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -637,16 +651,22 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    width: 64%;
+    width: 65%;
   }
-  .box1,
-  .box2,
   .box3 {
-    width: 28vw;
-    height: 26vw;
+    width: 30vw;
+		height: 93%;
     margin-bottom: 25px;
     box-shadow: 0 0 6px 3px #b1b1b14b;
   }
+	.box1 {
+		width: 32vw;
+		height: 82%;
+	}
+	.box2 {
+    width: 30vw;
+		height: 82%;
+	}
   .box2,
   .box3 {
     -webkit-box-orient: horizontal;
@@ -658,7 +678,8 @@ footer {
   .imgactiv2,
   .imgactiv3 {
     height: 18vw;
-    padding-bottom: 1vw;
+    padding-bottom: 0;
+
   }
   .container {
 		padding-left: 10px;
@@ -732,21 +753,29 @@ footer {
   .sinscrire {
     margin-right: 25px;
   }
-  .box1,
-	.box2,
-	.box3 {
-		height: 170px;
-	}
 	.noshebergements,
 	.assistance {
     margin-right: 11vw;
     margin-left: 9vw;
 }
-
 	.apropos {
     margin-right: 11vw;
     margin-left: 3vw;
-}
+	}
+	.imgactiv1,
+  .imgactiv2,
+  .imgactiv3 {
+    height: 14vw;
+    padding-bottom: 0;
+  }
+  .activites h4 {
+  	padding-left: 0;
+  }
+  #activitesection h3 {
+  	width: 95%;
+  	padding-left: 2.2vw;
+  }
+
 }
 	
 @media screen and (max-width: 576px){
@@ -838,20 +867,16 @@ footer {
   .container {
 		justify-content: center;
 	}
-	#activitesection,
-	.activites
-	 {
+	#activitesection {
  	  padding-left: 2.2vw;
  	  padding-right: 10px;
  	  justify-content: center;
 }
-	.box1,
-	.box2,
-	.box3,
 	.boxhebergement {
 		width: 100%;
 		height: 200px;
 	}
+
 	.boxpopulaire {
     width: 90%;
   }
@@ -861,5 +886,13 @@ footer {
 		padding-left: 3px;
 		padding-right: 3px;
 	}
+	.box1,
+	.box2,
+	.box3 {
+		width: 100%;
+		height: 100%;
+		padding-bottom: 25px;
+		margin-bottom: 20px;
+  }
 
 }
