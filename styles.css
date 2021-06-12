@@ -867,7 +867,8 @@ footer {
   .container {
 		justify-content: center;
 	}
-	#activitesection {
+	#activitesection,
+	.activites {
  	  padding-left: 2.2vw;
  	  padding-right: 10px;
  	  justify-content: center;
