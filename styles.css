@@ -7,18 +7,21 @@ body {
 	margin: 0;
 }
 
+h4,p {
+	margin: 0;
+}
+
+
 
 .logo {
 	align-items: center;
 	display: inline-flex;
-	margin-left: 50px;
 	width: 150px;
 	position: absolute;
 
 }
 
 .flex-container {
-	margin-left: 50px;
 	display: flex;
 
 }
@@ -42,8 +45,6 @@ nav {
 nav ul {
   display: flex;
   list-style-type: none;
-  margin-top: 0;
-  margin-right: 50px;
 }
 nav ul li {
   border-top: solid 2.5px transparent;
@@ -61,14 +62,10 @@ nav ul li:hover {
   font-size: 1.1em;
   color: #0065fc;
   float: right;
-  margin-right: 50px;
-  padding-top: 26px;
+  padding-top: 55px;
+  margin-right: 2.2vw;
 }
 
-.recherche {
-    margin-left: 50px;
-    margin-bottom: 30px;
-}
 
 .mapmarker i {
   align-items: center;
@@ -77,8 +74,7 @@ nav ul li:hover {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   height: 60px;
-  width: 65px;
-  margin-left: 0px;
+  width: 60px;
   position: relative;
   display: inline-flex;
 }
@@ -88,10 +84,20 @@ nav ul li:hover {
 	margin-top: 20px;
 }
 
+.recherche {
+	margin-bottom: 30px;
+}
+
+.recherche,
+.info,
+.logo {
+	margin-left: 2.2vw;
+}
+
 .searchfield {
-	height: 53px;
+	height: 80%;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.1em;
 	color: #000000;
 	padding-left: 15px;
 	width: 305px;
@@ -116,6 +122,7 @@ nav ul li:hover {
 	font-size: 1.5em;
 	width: 190px;
 	margin: 0;
+	box-shadow: 0 0 0 1px #0065fc;
 
 }
 
@@ -125,15 +132,13 @@ nav ul li:hover {
 	border-color: transparent;
 }
 
-.filters {
-  margin-left: 50px;
-}
 .category-head {
   margin-bottom: 20px;
 }
 .filtres {
   float: left;
   margin-right: 2.2vw;
+  padding-top: 5px;
 }
 .icontextfilters {
   font-weight: bold;
@@ -144,16 +149,20 @@ nav ul li:hover {
   border-bottom: solid #e0e0e0 2px;
   border-left: none;
   border-radius: 60px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding-right: 5em;
   padding-top: 0.05em;
   padding-bottom: 0.05em;
   padding-left: 0;
 }
 
+.filters {
+  margin-left: 2.2vw;
+}
+
 .filterdescription {
 	display: inline-block;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	margin-left: 5px;
 }
 .icontextfilters:hover {
@@ -165,14 +174,13 @@ nav ul li:hover {
   	margin-top: 15px;
   	width: 100%;
   	display: inline-flex;
-  	margin-left: 50px;
   	margin-bottom: 30px;
 }
 
 .info p {
-  	font-size: 1.1em;
+  	font-size: 0.9em;
   	margin-left: 0;
-  	margin-top: 20px;
+  	margin-top: 25px;
 }
 
 .iconinfo {
@@ -187,7 +195,7 @@ nav ul li:hover {
   margin-top: 17px;
   font-size: 0.8em;
   border-color: #f2f2f2;
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .hebergements {
@@ -203,16 +211,10 @@ nav ul li:hover {
 
 
 .hebergements p {
-	padding-left: 10px;
-	padding-bottom: 0;
 	font-size: 0.8em;
-	padding-top: 0;
 }
-.boxhebergement h4 {
+.hebergements h4 {
 	font-size: 1em;
-	padding-left: 10px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .boxhebergement {
@@ -230,11 +232,11 @@ nav ul li:hover {
 
 h2 {
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 .recherche p {
-	font-size: 1.3em;
+	font-size: 0.9em;
 }
 
 
@@ -288,21 +290,19 @@ h3 {
 
 .boxpopulaire p {
 	font-size: 1em;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 
 }
 
 h1 {
 	font-weight: bolder;
-	font-size: 2.1em;
+	font-size: 1.5em;
 
 }
 
 h4 {
 	color: #000000;
 	font-weight: bolder;
-	padding-bottom: 0;
-	padding-top: 0;
 }
 
 
@@ -323,7 +323,7 @@ h5 {
 	padding-right: 40px;
 	height: auto;
 	border-radius: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 }
 
 
@@ -337,7 +337,7 @@ h5 {
 	border-color: #DEEBFF;
 	width: 21.5px;
 	height: 21.5px;
-	margin: auto;
+	margin: 0;
 	position: relative;
   display: inline-flex;
   color: #0065FC;
@@ -367,7 +367,7 @@ img {
 	border-top-left-radius: 20px;
 	object-fit: cover;
 	width: 100%;
-    height: 55%;
+  height: 55%;
 }
 
 .imagepopulaire {
@@ -384,7 +384,6 @@ img {
 
 p {
 	color: #000000;
-	padding-bottom: 0;
 }
 
 .etoilebleu {
@@ -401,9 +400,7 @@ p {
 }
 
 .etoilesheb {
-	padding-left: 10px;
 	font-size: 15px;
-	padding-bottom: 5px;
 }
 
 .etoiles {
@@ -425,7 +422,7 @@ p {
 }
 
 .lespluspopulaires h3 {
-	font-size: 1.9em;
+	font-size: 1.8em;
 }
 
 .afficherplus {
@@ -433,12 +430,11 @@ p {
 	font-size: 1em;
 }
 
-
-
 main {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 50px;
+	margin-left: 2.2vw;
+	margin-right: 2.2vw;
 }
 
 #activitesection {
@@ -447,9 +443,9 @@ main {
   ustify-content: space-between;
   flex-direction: column;
   border-radius: 20px;
+  padding-left: 2.2vw;
   width: 100%;
   position: relative;
-  margin-left: 50px;
 }
 
 #activitesection h3 {
@@ -460,7 +456,7 @@ main {
 
 .activites {
 	  display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     background-color: #ffffff;
     width: 100%;
   	justify-content: space-between;
@@ -470,7 +466,6 @@ main {
 .activites h4 {
 	font-size: 1.1em;
 	padding-left: 15px;
-	padding-top: 10px;
 	font-weight: bold;
 }
 
@@ -537,7 +532,7 @@ footer ul {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
-  height: 85%;
+  height: 90%;
   padding-bottom: 0;
   object-fit: cover;
 }
@@ -545,7 +540,7 @@ footer ul {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
-  height: 70%;
+  height: 82%;
   padding-bottom: 0;
   object-fit: cover;
 }
@@ -553,7 +548,7 @@ footer ul {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
-  height: 63%;
+  height: 76%;
   padding-bottom: 0;
   object-fit: cover;
 }
@@ -562,14 +557,12 @@ footer ul {
   border-radius: 20px;
 }
 
-
 footer {
 	border: 1px solid;
 	background-color: #f2f2f2;
 	border-color: #f2f2f2;
 	display: flex;
 	height: auto;
-
 }
 
 .noshebergements,
@@ -581,10 +574,7 @@ footer {
 .apropos {
     margin-right: 13vw;
     margin-left: 3vw;
-
 }
-
-
 
 @media screen and (max-width: 1800px){
 	.container {
@@ -595,32 +585,16 @@ footer {
 		height: 200px;
 		padding: 0;
 	}
-	.hebergements p {
-		padding-bottom: 0;
-	}
-	.populaires p {
-		padding-bottom: 0;
-	}
-	main,
-	.activites {
-		margin: 5px;
-	}
 	.apropos {
-		margin-left: 5px;
 		padding-left: 5px;
 	}
 
 	#activitesection {
-		margin-left: 5px;
 		margin-bottom: 20px;
 	}
 	.boxpopulaire {
 		height: 140px ;
 	}
-	#activitesection h3 {
-		margin-left: 5px;
-	}
-}
 
 @media screen and (max-width: 992px){
 	main {
@@ -632,11 +606,10 @@ footer {
 		margin-bottom: 20px;
 	}
 	.boxpopulaire {
-		width: 30%;
+		width: 25vw;
 	}
 	.imagepopulaire {
 		width: 25%;
-		margin: 0;
 	}
 	.poptitle {
 		width: 95%;
@@ -670,7 +643,7 @@ footer {
   .box2,
   .box3 {
     width: 28vw;
-    height: 24vw;
+    height: 26vw;
     margin-bottom: 25px;
     box-shadow: 0 0 6px 3px #b1b1b14b;
   }
@@ -680,7 +653,6 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin-left: 0.7vw;
   }
   .imgactiv1,
   .imgactiv2,
@@ -688,13 +660,98 @@ footer {
     height: 18vw;
     padding-bottom: 1vw;
   }
+  .container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.lespluspopulaires {
+		padding-left: 20px;
+		padding-right: 10px;
+	}
+	.container {
+		background-color: white;
+	}
+	.boxpopulaire {
+    width: 95%;
+    height: 200px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
+  }
 
+}
+
+@media screen and (max-width: 768px){
+	.flex-container {
+    width: 100vw;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  nav ul {
+    width: 100%;
+    padding-left: 0;
+  }
+  nav ul li {
+    border-bottom: solid 2.5px #f2f2f2;
+    padding-bottom: 15px;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 50px;
+  }
+  nav ul li:hover {
+    border-bottom: solid 2.5px #0065fc;
+    border-top: solid 2.5px transparent;
+    padding-bottom: 10px;
+  }
+  .icontextfilters {
+  	padding-right: 1em;
+	}
+.searchbutton {
+	display: none;
+}
+.searchfa {
+	height: 54px;
+	border-radius: 15px;
+	background-color: #0065FC;
+	color: #FFFFFF;
+	width: 58px;
+	box-shadow: 0 0 0 3px #0065fc;
+	}
+.searchfield {
+	width: 80%;
+}
+.research {
+	height: 56px;
+	width: 100%;
+}
+  .sinscrire {
+    margin-right: 25px;
+  }
+  .box1,
+	.box2,
+	.box3 {
+		height: 170px;
+	}
+	.noshebergements,
+	.assistance {
+    margin-right: 11vw;
+    margin-left: 9vw;
+}
+
+	.apropos {
+    margin-right: 11vw;
+    margin-left: 3vw;
+}
 }
 	
 @media screen and (max-width: 576px){
 	#activitesection {
     width: 95%;
-    margin: 0;
   }
   .activites {
     flex-direction: column;
@@ -714,15 +771,11 @@ footer {
     flex-direction: column;
     width: 95%;
   }
-  .box1,
-  .box2,
-  .box3,
-  .boxhebergement,
-  .boxpopulaire {
-    width: 100%;
-    height: 24vw;
-    margin-bottom: 25px;
-    box-shadow: 0 0 6px 3px #b1b1b14b;
+  .etoilesheb{
+  	font-size: 0.6em;
+  }
+  .etoiles {
+  	font-size: 0.6em;
   }
   .box2,
   .box3 {
@@ -730,12 +783,11 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-left: 0.7vw;
   }
   .imgactiv1,
   .imgactiv2,
   .imgactiv3 {
-    height: 18vw;
+    height: 150px;
     padding-bottom: 1vw;
   }
   footer,
@@ -746,6 +798,10 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  footer {
+  	width: 95%;
+  }
+  	
   .noshebergements,
 	.assistance {
     margin-left: 3vw;
@@ -755,4 +811,55 @@ footer {
     margin-left: 3vw;
 
 	}
+	.searchfield {
+	width: 72%;
+	padding-left: 5px;
+}
+.research {
+	height: 56px;
+	width: 75%;
+}
+.filterdescription {
+	margin: 0;
+}
+.icontextfilters {
+	padding-right: 0.5em;
+}
+.filtres {
+    width: 100%;
+    margin: 10px 0px 10px 6px;
+  }
+  .boxpopulaire {
+    height: 32vw;
+  }
+  .boxhebergement {
+  	height: 200px;
+  }
+  .container {
+		justify-content: center;
+	}
+	#activitesection,
+	.activites
+	 {
+ 	  padding-left: 2.2vw;
+ 	  padding-right: 10px;
+ 	  justify-content: center;
+}
+	.box1,
+	.box2,
+	.box3,
+	.boxhebergement {
+		width: 100%;
+		height: 200px;
+	}
+	.boxpopulaire {
+    width: 90%;
+  }
+  .iconinfo {
+		width: 25px;
+		height: 25px;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+
 }
