@@ -95,9 +95,9 @@ nav ul li:hover {
 }
 
 .searchfield {
-	height: 80%;
+	height: 85%;
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: 1em;
 	color: #000000;
 	padding-left: 15px;
 	width: 305px;
@@ -737,14 +737,14 @@ footer {
 }
 .searchfa {
 	height: 54px;
-	border-radius: 15px;
+	border-radius: 10px;
 	background-color: #0065FC;
 	color: #FFFFFF;
 	width: 58px;
 	box-shadow: 0 0 0 3px #0065fc;
 	}
 .searchfield {
-	width: 80%;
+	width: 78%;
 }
 .research {
 	height: 56px;
@@ -877,7 +877,6 @@ footer {
 		width: 100%;
 		height: 200px;
 	}
-
 	.boxpopulaire {
     width: 90%;
   }
@@ -895,5 +894,12 @@ footer {
 		padding-bottom: 25px;
 		margin-bottom: 20px;
   }
+  .searchfield {
+		width: 73%;
+		padding-left: 2px;
+	}
+	.research {
+		width: 76%;
+	}
 
 }
