@@ -150,7 +150,7 @@ nav ul li:hover {
   border-left: none;
   border-radius: 60px;
   margin-bottom: 10px;
-  padding-right: 5em;
+  padding-right: 1em;
   padding-top: 0.05em;
   padding-bottom: 0.05em;
   padding-left: 0;
@@ -222,9 +222,9 @@ nav ul li:hover {
 	border-radius: 20px;
 	background-color: #ffffff;
 	border-color: #ffffff;
-	width: 16.5vw;
+	width: 18vw;
 	padding: 5px;
-	height: 12vw;
+	height: 13vw;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	margin: 10px 0 25px 0;
 }
@@ -319,8 +319,8 @@ h5 {
 	background-color: #F2F2F2;
 	justify-content: space-between;
 	width: 63%;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
 	height: auto;
 	border-radius: 20px;
 	padding-bottom: 10px;
@@ -416,8 +416,8 @@ p {
 	border-radius: 20px;
 	width: 26%;
 	height: auto;
-	padding-left: 30px;
-	padding-right: 40px;
+	padding-left: 20px;
+	padding-right: 30px;
 	position: relative;
 }
 
@@ -575,7 +575,7 @@ footer {
     margin-left: 3vw;
 }
 
-@media screen and (max-width: 1800px){
+@media screen and (max-width: 1200px){
 	.container {
 		width: 55%;
 	}
@@ -610,17 +610,31 @@ footer {
 	}
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1024px){
 	main {
     flex-direction: column-reverse;
 	}
 	.lespluspopulaires,
 	.container {
-		width: 95%;
+		width: 98%;
 		margin-bottom: 20px;
 	}
-	.boxpopulaire {
-		width: 25vw;
+	.lespluspopulaires {
+		-webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    position: relative;
+}
+.boxpopulaire {
+    height: 15vw;
+    margin-bottom: 25px;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
+		width: 23vw;
+    justify-content: space-between;
+    display: inline-block;
 	}
 	.imagepopulaire {
 		width: 25%;
@@ -686,18 +700,14 @@ footer {
 		padding-right: 10px;
 	}
 	.lespluspopulaires {
-		padding-left: 20px;
+		padding-left: 10px;
 		padding-right: 10px;
 	}
 	.container {
 		background-color: white;
 	}
-	.boxpopulaire {
-    width: 95%;
-    height: 200px;
-    margin-bottom: 25px;
-    box-shadow: 0 0 6px 3px #b1b1b14b;
-  }
+	
+
 
 }
 
@@ -744,7 +754,7 @@ footer {
 	box-shadow: 0 0 0 3px #0065fc;
 	}
 .searchfield {
-	width: 78%;
+	width: 75%;
 }
 .research {
 	height: 56px;
