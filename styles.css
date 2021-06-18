@@ -620,21 +620,18 @@ footer {
 		margin-bottom: 20px;
 	}
 	.lespluspopulaires {
-		-webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
     justify-content: space-between;
     height: auto;
-    position: relative;
+    display: flex;
 }
 .boxpopulaire {
     height: 15vw;
     margin-bottom: 25px;
     box-shadow: 0 0 6px 3px #b1b1b14b;
-		width: 23vw;
+		width: 29%;
     justify-content: space-between;
-    display: inline-block;
+    gap: 20px;
+    display: inline-flex;
 	}
 	.imagepopulaire {
 		width: 25%;
@@ -693,6 +690,7 @@ footer {
   .imgactiv3 {
     height: 18vw;
     padding-bottom: 0;
+    background-color: white;
 
   }
   .container {
@@ -703,10 +701,6 @@ footer {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	.container {
-		background-color: white;
-	}
-	
 
 
 }
