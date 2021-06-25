@@ -756,14 +756,21 @@ footer {
 	box-shadow: 0 0 0 3px #0065fc;
 	}
 .searchfield {
-	width: 75%;
+	width: 89%;
+	display: flex;
 }
 .research {
 	height: 56px;
 	width: 100%;
+	display: flex;
+}
+.search {
+	width: 98%;
+	display: flex;
 }
   .sinscrire {
     margin-right: 25px;
+    padding-top: 35px;
   }
 	.imgactiv1,
   .imgactiv2,
@@ -891,14 +898,6 @@ footer {
     margin-left: 3vw;
 
 	}
-	.searchfield {
-	width: 72%;
-	padding-left: 5px;
-}
-.research {
-	height: 56px;
-	width: 75%;
-}
 .filterdescription {
 	margin: 0;
 }
@@ -928,13 +927,7 @@ footer {
 		padding-left: 3px;
 		padding-right: 3px;
 	}
-  .searchfield {
-		width: 73%;
-		padding-left: 2px;
-	}
-	.research {
-		width: 76%;
-	}
+
 	.boxhebergement {
 		height: 48vw;
 	}
